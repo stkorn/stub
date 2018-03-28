@@ -3,7 +3,6 @@
         url: /api/mobile/login
     response:
         status: 200
-        latency: 3000
         body: |
             {
                 "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyY29kZSI6Ik9NUkJSTkQwMyIsInVzZXJsYW4iOiJPTVJCUk5EMDMifQ.ndcG-dZcxgKD85Tmo4IClswwG0YFwfUepFHflNtK8qg",
@@ -24,14 +23,12 @@
         url: ^/api/mobile/tel/check/.*
     response:
         status: 200
-        latency: 3000
 
 -   request:
         method: POST
         url: ^/api/gateway/faceRecognition
     response:
         status: 200
-        latency: 3000
         body: |
             {
                 "status": "01",
@@ -46,7 +43,6 @@
         url: ^/api/mobile/customer/registration/getCompleteRapidRegistration/simBarcode/.*
     reponse:
         status: 200
-        latency: 3000
         body: |
             {
                 "BillingProductCode": "02",
@@ -72,4 +68,24 @@
                 "SpecialType": "O5",
                 "GoldenType": "",
                 "IsAuthorizeUser": "Y"
+            }
+
+-   request:
+        method: GET
+        url: ^/api/packageGroup.*
+    reponse:
+        status: 200
+        body: |
+            {
+                "listPackageGroups": [
+                    {
+                        "packageGroupCode": "11300008",
+                        "packageGroupDescription": "11300005_TEL_test_for_spencer",
+                        "switchOnReasonCode": "11000009",
+                        "switchOnReasonDescription": "จดทะเบียน Ready Registration",
+                        "marketingDescription": "11300005_TEL_test_for_spencer",
+                        "promotionCode": "",
+                        "specialType": ""
+                    }
+                ]
             }
