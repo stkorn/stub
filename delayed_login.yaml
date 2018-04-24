@@ -5,8 +5,32 @@
         status: 200
         body: |
             {
-                "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyY29kZSI6Ik9NUkJSTkQwMyIsInVzZXJsYW4iOiJPTVJCUk5EMDMifQ.ndcG-dZcxgKD85Tmo4IClswwG0YFwfUepFHflNtK8qg",
+                "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjZCI6InBxejhzNjFGVWNka0JKV3BvTldXcHJFTTRjWmZEMnlzeWUyK0ZFN3ZaZUU9IiwidXNlcmNvZGUiOiJPTVJCUk5EMDMiLCJ1c2VybGFuIjoiT01SQlJORDAzIn0.MlMjYr0ugfBOWxjf353XLxV49p169V6RyagtWkUBJWU",
                 "expiresAt": "479",
+                "profile": {
+                    "userCode": "OMRBRND03",
+                    "username": "OMRBRND03",
+                    "userChannel": "0002",
+                    "group": {
+                        "code": "0039",
+                        "name": "IS - ISSUE MANAGEMENT + CDR + CORP"
+                    },
+                    "dataGroup": {
+                        "code": "0099",
+                        "description": "IS ISSUES MANAGEMENT"
+                    },
+                    "team": {
+                        "userTeam": "KHONKAEN001",
+                        "teamName": "KHONKAEN_001",
+                        "managerUser": "OMRBRND01"
+                    },
+                    "locationCode": "80003",
+                    "locationName": "สำนักงานใหญ่  (BATCH APAC)",
+                    "telephoneNumber": "-",
+                    "email": "",
+                    "dealerNumber": "",
+                    "channel": "Service Hall"
+                },
                 "screenCodes": [
                     {
                         "code": "M_REGS_POST",
