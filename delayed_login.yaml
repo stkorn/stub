@@ -56,6 +56,7 @@
                 "PackageGroupCode": "",
                 "PackageGroupDescriptionEng": "",
                 "DefaultPackageGroupCodeReadySIM": "12062682",
+                "CanChangePackageGroup":"N",
                 "SwitchOnReasonCode": "",
                 "HardwareNumber": "",
                 "CustomerNumber": "0",
@@ -84,8 +85,432 @@
                         "switchOnReasonCode": "11000009",
                         "switchOnReasonDescription": "จดทะเบียน Ready Registration",
                         "marketingDescription": "11300005_TEL_test_for_spencer",
+                        "marketingDescriptionThai": "LK_Go No Limit 499 บ. เน็ตไม่จำกัด ความเร็ว 1 Mbps โทรฟรี 100 นาที",
                         "promotionCode": "",
                         "specialType": ""
                     }
                 ]
             }
+-   request:
+        method: GET
+        url: ^/api/mobile/address/province
+    response:
+        status: 200
+        body: |
+            [
+                {
+                    "id": "9898",
+                    "name": "กระบี่"
+                },
+                {
+                    "id": "9848",
+                    "name": "กรุงเทพมหานคร"
+                },
+                {
+                    "id": "9853",
+                    "name": "กาญจนบุรี"
+                },
+                {
+                    "id": "9867",
+                    "name": "กาฬสินธุ์"
+                },
+                {
+                    "id": "9891",
+                    "name": "กำแพงเพชร"
+                },
+                {
+                    "id": "9861",
+                    "name": "ขอนแก่น"
+                },
+                {
+                    "id": "9913",
+                    "name": "จันทบุรี"
+                },
+                {
+                    "id": "9915",
+                    "name": "ฉะเชิงเทรา"
+                },
+                {
+                    "id": "9911",
+                    "name": "ชลบุรี"
+                },
+                {
+                    "id": "9887",
+                    "name": "ชัยนาท"
+                },
+                {
+                    "id": "9877",
+                    "name": "ชัยภูมิ"
+                },
+                {
+                    "id": "9903",
+                    "name": "ชุมพร"
+                },
+                {
+                    "id": "9885",
+                    "name": "เชียงราย"
+                },
+                {
+                    "id": "9879",
+                    "name": "เชียงใหม่"
+                },
+                {
+                    "id": "9904",
+                    "name": "ตรัง"
+                },
+                {
+                    "id": "9914",
+                    "name": "ตราด"
+                },
+                {
+                    "id": "9892",
+                    "name": "ตาก"
+                },
+                {
+                    "id": "9917",
+                    "name": "นครนายก"
+                },
+                {
+                    "id": "9854",
+                    "name": "นครปฐม"
+                },
+                {
+                    "id": "9869",
+                    "name": "นครพนม"
+                },
+                {
+                    "id": "9871",
+                    "name": "นครราชสีมา"
+                },
+                {
+                    "id": "9897",
+                    "name": "นครศรีธรรมราช"
+                },
+                {
+                    "id": "9889",
+                    "name": "นครสวรรค์"
+                },
+                {
+                    "id": "9850",
+                    "name": "นนทบุรี"
+                },
+                {
+                    "id": "9910",
+                    "name": "นราธิวาส"
+                },
+                {
+                    "id": "9883",
+                    "name": "น่าน"
+                },
+                {
+                    "id": "9859",
+                    "name": "บึงกาฬ"
+                },
+                {
+                    "id": "9872",
+                    "name": "บุรีรัมย์"
+                },
+                {
+                    "id": "9851",
+                    "name": "ปทุมธานี"
+                },
+                {
+                    "id": "9858",
+                    "name": "ประจวบคีรีขันธ์"
+                },
+                {
+                    "id": "9916",
+                    "name": "ปราจีนบุรี"
+                },
+                {
+                    "id": "9908",
+                    "name": "ปัตตานี"
+                },
+                {
+                    "id": "9919",
+                    "name": "พระนครศรีอยุธยา"
+                },
+                {
+                    "id": "9884",
+                    "name": "พะเยา"
+                },
+                {
+                    "id": "9899",
+                    "name": "พังงา"
+                },
+                {
+                    "id": "9907",
+                    "name": "พัทลุง"
+                },
+                {
+                    "id": "9895",
+                    "name": "พิจิตร"
+                },
+                {
+                    "id": "9894",
+                    "name": "พิษณุโลก"
+                },
+                {
+                    "id": "9857",
+                    "name": "เพชรบุรี"
+                },
+                {
+                    "id": "9896",
+                    "name": "เพชรบูรณ์"
+                },
+                {
+                    "id": "9882",
+                    "name": "แพร่"
+                },
+                {
+                    "id": "9900",
+                    "name": "ภูเก็ต"
+                },
+                {
+                    "id": "9865",
+                    "name": "มหาสารคาม"
+                },
+                {
+                    "id": "9870",
+                    "name": "มุกดาหาร"
+                },
+                {
+                    "id": "9886",
+                    "name": "แม่ฮ่องสอน"
+                },
+                {
+                    "id": "9876",
+                    "name": "ยโสธร"
+                },
+                {
+                    "id": "9909",
+                    "name": "ยะลา"
+                },
+                {
+                    "id": "9866",
+                    "name": "ร้อยเอ็ด"
+                },
+                {
+                    "id": "9902",
+                    "name": "ระนอง"
+                },
+                {
+                    "id": "9912",
+                    "name": "ระยอง"
+                },
+                {
+                    "id": "9852",
+                    "name": "ราชบุรี"
+                },
+                {
+                    "id": "9921",
+                    "name": "ลพบุรี"
+                },
+                {
+                    "id": "9881",
+                    "name": "ลำปาง"
+                },
+                {
+                    "id": "9880",
+                    "name": "ลำพูน"
+                },
+                {
+                    "id": "9863",
+                    "name": "เลย"
+                },
+                {
+                    "id": "9874",
+                    "name": "ศรีสะเกษ"
+                },
+                {
+                    "id": "9868",
+                    "name": "สกลนคร"
+                },
+                {
+                    "id": "9905",
+                    "name": "สงขลา"
+                },
+                {
+                    "id": "9906",
+                    "name": "สตูล"
+                },
+                {
+                    "id": "9849",
+                    "name": "สมุทรปราการ"
+                },
+                {
+                    "id": "9856",
+                    "name": "สมุทรสงคราม"
+                },
+                {
+                    "id": "9855",
+                    "name": "สมุทรสาคร"
+                },
+                {
+                    "id": "9918",
+                    "name": "สระแก้ว"
+                },
+                {
+                    "id": "9923",
+                    "name": "สระบุรี"
+                },
+                {
+                    "id": "9922",
+                    "name": "สิงห์บุรี"
+                },
+                {
+                    "id": "9893",
+                    "name": "สุโขทัย"
+                },
+                {
+                    "id": "9924",
+                    "name": "สุพรรณบุรี"
+                },
+                {
+                    "id": "9901",
+                    "name": "สุราษฎร์ธานี"
+                },
+                {
+                    "id": "9873",
+                    "name": "สุรินทร์"
+                },
+                {
+                    "id": "9864",
+                    "name": "หนองคาย"
+                },
+                {
+                    "id": "9860",
+                    "name": "หนองบัวลำภู"
+                },
+                {
+                    "id": "9920",
+                    "name": "อ่างทอง"
+                },
+                {
+                    "id": "9878",
+                    "name": "อำนาจเจริญ"
+                },
+                {
+                    "id": "9862",
+                    "name": "อุดรธานี"
+                },
+                {
+                    "id": "9888",
+                    "name": "อุตรดิตถ์"
+                },
+                {
+                    "id": "9890",
+                    "name": "อุทัยธานี"
+                },
+                {
+                    "id": "9875",
+                    "name": "อุบลราชธานี"
+                }
+            ]
+-   request:
+        method: GET
+        url: ^/api/mobile/address/district/.*
+    reponse:
+        status: 200
+        body: |
+            [
+                {
+                    "id": "1142",
+                    "name": "เกาะจันทร์"
+                },
+                {
+                    "id": "1139",
+                    "name": "เกาะสีชัง"
+                },
+                {
+                    "id": "1141",
+                    "name": "บ่อทอง"
+                },
+                {
+                    "id": "1135",
+                    "name": "บางละมุง"
+                },
+                {
+                    "id": "1133",
+                    "name": "บ้านบึง"
+                },
+                {
+                    "id": "1137",
+                    "name": "พนัสนิคม"
+                },
+                {
+                    "id": "1136",
+                    "name": "พานทอง"
+                },
+                {
+                    "id": "1132",
+                    "name": "เมืองชลบุรี"
+                },
+                {
+                    "id": "1138",
+                    "name": "ศรีราชา"
+                },
+                {
+                    "id": "1134",
+                    "name": "หนองใหญ่"
+                }
+            ]
+-   request:
+        method: GET
+        url: ^/api/mobile/address/subdistrict/.*
+    reponse:
+        status: 200
+        body: |
+            [
+                {
+                    "id": "1246",
+                    "name": "ท่าเทววงษ์"
+                }
+            ]
+-   request:
+        method: GET
+        url: ^/api/mobile/address/province/.*
+    reponse:
+        status: 200
+        body: |
+            {
+                "data": [
+                    {
+                        "ProvinceCode": "32",
+                        "PostcodeSeq": "112",
+                        "AmphurName": "เสิงสาง",
+                        "Postcode": "30330",
+                        "CountryCode": "66",
+                        "CountryName": "ไทย",
+                        "ProvinceName": "นครราชสีมา"
+                    }
+                ]
+            }
+-   request:
+        method: POST
+        url: ^/api/mobile/uploadAttachments
+    reponse:
+        -   status: 200
+            # latency: 1000
+            # headers:
+            #     content-type: application/json
+            # body: |
+            #     {
+            #         "code": "500",
+            #         "en": "UPLOAD FAIL",
+            #         "th": "อัพโหลดล้มเหลว"
+            #     }
+-   request:
+        method: POST
+        url: ^/api/mobile/registration
+    reponse:
+        -   status: 200
+            # latency: 1000
+            # headers:
+            #     content-type: application/json
+            # body: |
+            #     {
+            #         "code": "500",
+            #         "en": "Registration FAIL",
+            #         "th": "ลงทะเบียนล้มเหลว"
+            #     }
