@@ -31,6 +31,10 @@
                     "dealerNumber": "",
                     "channel": "Service Hall"
                 },
+                "retailer": {
+                    "code": "71438887",
+                    "name": "*****"
+                },
                 "screenCodes": [
                     {
                         "code": "M_REGS_POST",
