@@ -45,16 +45,26 @@
                     }
                 ]
             }
-
+-   request:
+        method: GET
+        url: ^/api/mobile/mobileConfig
+    response:
+        status: 200
+        body: |
+            {
+                "postpaidRegistration.referenceDoc.max": "3",
+                "postpaidRegistration.faceRecognition.attempt.max": "3",
+                "postpaidRegistration.faceDetection.attempt.max": "3"
+            }
 -   request:
         method: GET
         url: ^/api/mobile/tel/check/.*
     response:
-        status: 200
+        status:  200
 
 -   request:
         method: POST
-        url: ^/api/gateway/faceRecognition
+        url: ^/api/mobile/faceRecognition
     response:
         status: 200
         body: |
@@ -63,9 +73,8 @@
                 "message": "No match",
                 "confidence": "0.97",
                 "timestamp": "20180328113745",
-                "omr_status": "PASS"
+                "omr_status": "FAIL"
             }
-
 -   request:
         method: GET
         url: ^/api/mobile/customer/registration/getCompleteRapidRegistration/simBarcode/.*
@@ -75,33 +84,38 @@
             {
                 "BillingProductCode": "02",
                 "TelephoneType": "TEL",
-                "CardNumber": "8966051403443805039",
-                "DealerCode": "10000002",
+                "CardNumber": "8966051310419242560",
+                "DealerCode": "11591002",
                 "DealerName": "*****",
-                "PackageGroupType": "15",
-                "SubscriberNumber": "66869434256",
-                "DisplaySubscriberNumber": "0869434256",
+                "PackageGroupType": "10                                                ",
+                "SubscriberNumber": "66949170236",
+                "DisplaySubscriberNumber": "0949170236",
                 "PackageGroupCode": "",
                 "PackageGroupDescriptionEng": "",
-                "DefaultPackageGroupCodeReadySIM": "12062682",
-                "CanChangePackageGroup":"N",
+                "DefaultPackageGroupCodeReadySIM": "",
+                "CanChangePackageGroup": "Y",
                 "SwitchOnReasonCode": "",
                 "HardwareNumber": "",
                 "CustomerNumber": "0",
                 "CustomerLastChangeDatetime": "",
-                "IsReadySIM": "Y",
+                "IsReadySIM": "N",
                 "SMSLanguage": "T",
                 "IVRLanguage": "T",
                 "USSDLanguage": "E",
                 "CompanyCode": "20",
-                "SpecialType": "O5",
-                "GoldenType": "",
-                "IsAuthorizeUser": "Y"
+                "SpecialType": "62",
+                "GoldenType": "XXXX",
+                "IsAuthorizeUser": "Y",
+                "isNiceNumber": true,
+                "contractPeriod": 24,
+                "advancePayment": 24000,
+                "penaltyRate": 100000,
+                "packageGroupRefNo": "1527235623324295717_OMRBRND03"
             }
 
 -   request:
         method: GET
-        url: ^/api/packageGroup.*
+        url: ^/api/mobile/packageGroup.*
     reponse:
         status: 200
         body: |
@@ -118,6 +132,589 @@
                         "specialType": ""
                     }
                 ]
+            }
+-   request:
+        method: POST
+        url: ^/api/mobile/searchPackageGroup/.*
+    reponse:
+        status: 200
+        body: |
+            {
+                "listPackageGroups": [
+                    {
+                        "packageGroupCode": "11000101",
+                        "packageGroupDescription": "NORMAL PACKAGE(S)",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Normal Package 500Baht/month",
+                        "marketingDescriptionThai": "Normal Package 500บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "N1      "
+                    }
+                ],
+                "warningMessage": "ไม่พบแพ็จเกจที่ค้นหา \n กรุณาค้นหาเพิ่มเติม หรือใส่รหัสที่ต้องการค่ะ"
+            }
+-   request:
+        method: GET
+        url: ^/api/mobile/viewAllPackageGroup/.*
+    reponse:
+        status: 200
+        body: |
+            {
+                "listPackageGroups": [
+                    {
+                        "packageGroupCode": "11000101",
+                        "packageGroupDescription": "NORMAL PACKAGE(S)",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Normal Package 500Baht/month",
+                        "marketingDescriptionThai": "Normal Package 500บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "N1      "
+                    },
+                    {
+                        "packageGroupCode": "11000102",
+                        "packageGroupDescription": "Dummy normal(S)",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Normal Package 500Baht/month",
+                        "marketingDescriptionThai": "Normal Package 500บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "N1      "
+                    },
+                    {
+                        "packageGroupCode": "11000109",
+                        "packageGroupDescription": "Pay 500 Bht.(500B_Fr500min)",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Pay 500 Bht.(500B_Fr500min)",
+                        "marketingDescriptionThai": "Pay 500 Bht.(500B_Fr500min)",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "N1      "
+                    },
+                    {
+                        "packageGroupCode": "11000110",
+                        "packageGroupDescription": "Pro 250B(Scall250B/First3Bnext1B)",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Pro 250B(Scall250B/First3Bnext1B)",
+                        "marketingDescriptionThai": "Pro 250B(Scall250B/First3Bnext1B)",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "R1      "
+                    },
+                    {
+                        "packageGroupCode": "11100021",
+                        "packageGroupDescription": "Pay 500 Bht.(500B_Fr500min)",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Pay 500 Bht.(500B_Fr500min)",
+                        "marketingDescriptionThai": "Pay 500 Bht.(500B_Fr500min)",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "N1      "
+                    },
+                    {
+                        "packageGroupCode": "11100023",
+                        "packageGroupDescription": "Pay500_Test_Lang_1",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Pay500_Test",
+                        "marketingDescriptionThai": "Pay500_Test",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "N1      "
+                    },
+                    {
+                        "packageGroupCode": "11300005",
+                        "packageGroupDescription": "11300005_TEL_test_for_spencer",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "11300005_TEL_test_for_spencer",
+                        "marketingDescriptionThai": "11300005_TEL_test_for_spencer",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "D2      "
+                    },
+                    {
+                        "packageGroupCode": "11300009",
+                        "packageGroupDescription": "11300009_TEL_test_for_spencer",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "11300009_TEL_test_for_spencer",
+                        "marketingDescriptionThai": "11300009_TEL_test_for_spencer",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "D1      "
+                    },
+                    {
+                        "packageGroupCode": "11300020",
+                        "packageGroupDescription": "11300020_TEL_test_for_spencer",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "11300020_TEL_test_for_spencer",
+                        "marketingDescriptionThai": "11300020_TEL_test_for_spencer",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "D1      "
+                    },
+                    {
+                        "packageGroupCode": "11900101",
+                        "packageGroupDescription": "NORMAL PACKAGE(S)",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Normal Package 500Baht/month",
+                        "marketingDescriptionThai": "Normal Package 500บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "N1      "
+                    },
+                    {
+                        "packageGroupCode": "12005801",
+                        "packageGroupDescription": "Posnet GPRS(1000B/ Month)",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Posnet GPRS",
+                        "marketingDescriptionThai": "Posnet GPRS",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "O1      "
+                    },
+                    {
+                        "packageGroupCode": "12021791",
+                        "packageGroupDescription": "Corp.DataSh39_3(149B/20MB/SMS2B/corp.app)-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Biz data Package 20 MB 149 THB/Month",
+                        "marketingDescriptionThai": "แพ็กเกจธุรกิจอินเทอร์เน็ตค่าบริการ20MB149บ./เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "C1      "
+                    },
+                    {
+                        "packageGroupCode": "12028701",
+                        "packageGroupDescription": "Corp.Data94_3(24M.449B/GPRSUnlimited/corp.app)-Nor",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Biz data unlimited Package 449 THB/Month",
+                        "marketingDescriptionThai": "แพ็กเกจธุรกิจอินเทอร์เน็ตไม่อั้น 449 บ./เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "C1      "
+                    },
+                    {
+                        "packageGroupCode": "12028711",
+                        "packageGroupDescription": "Corp.Data95_3(24M.449B/Unlimited/SMS2B/corp.app)-N",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Biz data unlimited Package 449 THB/Month",
+                        "marketingDescriptionThai": "แพ็กเกจธุรกิจอินเทอร์เน็ตไม่อั้น 449 บ./เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "C1      "
+                    },
+                    {
+                        "packageGroupCode": "12056841",
+                        "packageGroupDescription": "AirTab3G_unlimit(550B_NetUnlimit_Call1.5B)6m-Norma",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Aircard-Tablet, Unlimited internet (CBS)",
+                        "marketingDescriptionThai": "Aircard-Tablet เน็ตไม่จำกัด",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "DR      "
+                    },
+                    {
+                        "packageGroupCode": "12056931",
+                        "packageGroupDescription": "dtacSmartphone3G(1199B_NetUnlimit_Fr900m)12m-Norma",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Smartphone, Unlimited internet 1,199Baht/month",
+                        "marketingDescriptionThai": "Smartphone เน็ตไม่จำกัด โทร 900นาที 1,199บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "I3      "
+                    },
+                    {
+                        "packageGroupCode": "12057171",
+                        "packageGroupDescription": "dtacVoice(149B_Free120min_Oth1.50B)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "dtac Voice 149, Free calls 120mins 149Baht/month",
+                        "marketingDescriptionThai": "dtac Voice 149 โทรฟรี 120นาที 149บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "I4      "
+                    },
+                    {
+                        "packageGroupCode": "12057181",
+                        "packageGroupDescription": "dtacVoice(299B_Free350min_Oth1.50B)3m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "dtac Voice 299Baht/month",
+                        "marketingDescriptionThai": "dtac Voice 299บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "I4      "
+                    },
+                    {
+                        "packageGroupCode": "12057191",
+                        "packageGroupDescription": "dtacVoice(499B_Free650min_Oth1.50B)3m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "dtac Voice 499Baht/month",
+                        "marketingDescriptionThai": "dtac Voice 499บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "I4      "
+                    },
+                    {
+                        "packageGroupCode": "12057361",
+                        "packageGroupDescription": "MiniME(0B_Call1.5B_SMS2B_MMS5B_Net1B/min)12m-Norma",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "MiniME, Free monthly fee 12months",
+                        "marketingDescriptionThai": "MiniME ฟรีค่าบริการนาน12เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "DI      "
+                    },
+                    {
+                        "packageGroupCode": "12057961",
+                        "packageGroupDescription": "L-Mouth(799_FrOn600mOff600m_FrNet20hr_Min)12m-Norm",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Mouth Society L 799Baht/month",
+                        "marketingDescriptionThai": "เมาท์โซไซตี้ L 799บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "I0      "
+                    },
+                    {
+                        "packageGroupCode": "12059891",
+                        "packageGroupDescription": "Start99(99B_Call99B_0.99B/0.24On0.99Off)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "dtac Start Up 99Baht/month",
+                        "marketingDescriptionThai": "dtac Start Up 99บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "I8      "
+                    },
+                    {
+                        "packageGroupCode": "12059999",
+                        "packageGroupDescription": "four-mo(199B_10p-7p4SpNoFr1hr_1.0B_NetMin)12M-Rese",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "four-mo 199Baht/month",
+                        "marketingDescriptionThai": "โฟร์โม้ 199บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "DN      "
+                    },
+                    {
+                        "packageGroupCode": "12060511",
+                        "packageGroupDescription": "dtacVoiceS(149B_Free200min_Oth1.50B)3m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "dtac Voice 149Baht/month",
+                        "marketingDescriptionThai": "dtac Voice 149บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "I4      "
+                    },
+                    {
+                        "packageGroupCode": "12061651",
+                        "packageGroupDescription": "Corp.SMS_StdOn20(12M/On0.4B/Off0.7B)-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Biz SMS Package",
+                        "marketingDescriptionThai": "แพ็กเกจ Corporate SMS",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "C8      "
+                    },
+                    {
+                        "packageGroupCode": "12062691",
+                        "packageGroupDescription": "TriNet_SMP_Family_2sub(750B_500minNetULM)36m-Norm",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Smartphone Family 2numbers 750Baht/month",
+                        "marketingDescriptionThai": "Smartphone Family 2เบอร์ 750บาท/เดือน",
+                        "promotionCode": "55000001",
+                        "specialType": "",
+                        "eisGroup": "T3      "
+                    },
+                    {
+                        "packageGroupCode": "12062701",
+                        "packageGroupDescription": "TriNet_SMP_Family_3sub(1000B_750minNetULM)36m-Nor",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Smartphone Family 3numbers 1,000Baht/month",
+                        "marketingDescriptionThai": "Smartphone Family 3เบอร์ 1,000บาท/เดือน",
+                        "promotionCode": "55000002",
+                        "specialType": "",
+                        "eisGroup": "T3      "
+                    },
+                    {
+                        "packageGroupCode": "12064091",
+                        "packageGroupDescription": "Corp.Data313.1_3(24M330B/GPRSUn/FUP2GB)_BH-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Biz data unlimited Package 330 THB/Month",
+                        "marketingDescriptionThai": "แพ็กเกจธุรกิจอินเทอร์เน็ตไม่อั้น 330 บ./เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "C1      "
+                    },
+                    {
+                        "packageGroupCode": "12065291",
+                        "packageGroupDescription": "MoreVoice199(199B_Fr240m_Oth1.50B)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "More Voice 199,Free calls 240mins 199Baht/month",
+                        "marketingDescriptionThai": "More Voice 199 โทรฟรี 240นาที 199บาท/เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "U2      "
+                    },
+                    {
+                        "packageGroupCode": "12065856",
+                        "packageGroupDescription": "MoreNet4G_UPS(599B_Fr250m_NetUnlFUP2GB_Wifi)12m-No",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Smartphone MoreNet Unlimited 599Baht/month",
+                        "marketingDescriptionThai": "Smartphone MoreNet เน็ตไม่จำกัด 599บ./ด.",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "T9      "
+                    },
+                    {
+                        "packageGroupCode": "12066251",
+                        "packageGroupDescription": "SMP_BTL(599B_NetFUP2GBWiFi_Fr300m)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "SmartBuffet 599B,NetAlwaysOn2GB,Call300min,FreeOnNet 5am-5pm",
+                        "marketingDescriptionThai": "SmartBuffet599บ.เน็ตต่อเนื่อง2GBโทร300น. ฟรีเบอร์ดีแทค5-17น.",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "R3      "
+                    },
+                    {
+                        "packageGroupCode": "12067891",
+                        "packageGroupDescription": "SMP_LoveLove(449B_Fr7am-5pm_Net1GB_Wifi)3m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Smartphone Love Buffet",
+                        "marketingDescriptionThai": "Smartphone Love Buffet",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "U8      "
+                    },
+                    {
+                        "packageGroupCode": "12069131",
+                        "packageGroupDescription": "Corp.Data337.1_3(12M2099BFrUnlimited10248Kbps)BH-N",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Biz data unlimited Package 2,099 THB/Month",
+                        "marketingDescriptionThai": "แพ็กเกจธุรกิจอินเทอร์เน็ตไม่อั้น 2,099 บ./เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "C1      "
+                    },
+                    {
+                        "packageGroupCode": "12069701",
+                        "packageGroupDescription": "Saving299(Fr100min_Net1.5GB)_Stop_Roll-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Love and Roll299 Baht, Net limited 1.5GB, Free Call 100 min",
+                        "marketingDescriptionThai": "Love and Roll299 บาท เน็ตจำกัด 1.5GB โทรฟรี 100 นาที",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "A2      "
+                    },
+                    {
+                        "packageGroupCode": "12069711",
+                        "packageGroupDescription": "Saving399(Fr150min_Net3GB)_Stop_Roll-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "LnR Full Max_399B,Net Always Max Speed3GB, Call150min,wifi",
+                        "marketingDescriptionThai": "LnR Full Max_399 บาท เน็ตไม่ลดสปีด 3GB โทรฟรี 150 นาที wifi",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "A2      "
+                    },
+                    {
+                        "packageGroupCode": "12070111",
+                        "packageGroupDescription": "AdvNew_LnR2394(399B_Net3GB_Cal150min_wifi)12m-Norm",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Adv6M_LnR_Max399B,Net Always Max Speed3GB,Call150min,wifi",
+                        "marketingDescriptionThai": "Adv6M_LnR_Max399 บาท เน็ตไม่ลดสปีด 3GB โทรฟรี 150 นาที wifi",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "T7      "
+                    },
+                    {
+                        "packageGroupCode": "12070171",
+                        "packageGroupDescription": "AdvNew_LnR11994(1999B_Net20GB_FrAny24hr)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Adv6M LnR1999B.,Net limited 20GB wifi,FreeAnynet 24hr",
+                        "marketingDescriptionThai": "LoveRoll1999บจ่ายล่วงหน้า6ด.เน็ตจำกัด20GBฟรีทุกเครือข่าย24ชม",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "T7      "
+                    },
+                    {
+                        "packageGroupCode": "12070481",
+                        "packageGroupDescription": "SLoveSMP(349B_Net1.5GB_Call90min)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "SLoveSMP349 Baht, Net limited 1.5GB, Free Call 90 min",
+                        "marketingDescriptionThai": "SLoveSMP349 บาท เน็ตจำกัด 1.5GB โทรฟรี 90 นาที",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "A4      "
+                    },
+                    {
+                        "packageGroupCode": "12072241",
+                        "packageGroupDescription": "Adv_Freshy3990(399B_NetUlm1.5GB_Cal150min)10m-Norm",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Freshy399 Bt_Adv10M, Net ULM1.5GB,Free wifi,Free Call 150min",
+                        "marketingDescriptionThai": "Freshy399บ.จ่ายล่วงหน้า10ด.เน็ตไม่จำกัด1.5GB wifiโทรฟรี150น.",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "T7      "
+                    },
+                    {
+                        "packageGroupCode": "12073361",
+                        "packageGroupDescription": "MNP_LnR_Max399(799B_Net7GB_Call400min)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "LnR_Full Max799B,Net Always Max Speed7GB,Call400min,Wifi",
+                        "marketingDescriptionThai": "LnR_Full Max799 บาท เน็ตไม่ลดสปีด 7GB โทรฟรี400นาที Wifi",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "A2      "
+                    },
+                    {
+                        "packageGroupCode": "12074231",
+                        "packageGroupDescription": "AdvN3M_LnRMax5997(1999B_Net12GB_FrAny24hr)12m-Norm",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Adv3M_LnR_Max1999B,Net Always Max Speed12GB,Anynet24hrs,Wifi",
+                        "marketingDescriptionThai": "Adv3M_LnR_Max1999บ.เน็ตไม่ลดสปีด12GBฟรีทุกเครือข่าย24ชม.Wifi",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "T7      "
+                    },
+                    {
+                        "packageGroupCode": "12074351",
+                        "packageGroupDescription": "Table_Net_Non_Stop(299B_netULM750MB_Wifi)12m-Norma",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Tablet Net Nonstop 299 Baht, Net Always on 750MB wifi",
+                        "marketingDescriptionThai": "Tablet Net Nonstop 299 บาท เน็ตใช้ได้ต่อเนื่อง 750MB wifi",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "T8      "
+                    },
+                    {
+                        "packageGroupCode": "12074361",
+                        "packageGroupDescription": "Table_Net_Non_Stop(399B_netULM2GB_Wifi)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Tablet Net Nonstop 399 Baht, Net Always on 2GB wifi",
+                        "marketingDescriptionThai": "Tablet Net Nonstop 399 บาท เน็ตใช้ได้ต่อเนื่อง 2GB wifi",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "T8      "
+                    },
+                    {
+                        "packageGroupCode": "12074371",
+                        "packageGroupDescription": "Table_Net_Non_Stop(599B_NetULM5GB_wifi)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Tablet Net Nonstop 599 Baht, Net Always on 5GB wifi",
+                        "marketingDescriptionThai": "Tablet Net Nonstop 599 บาท เน็ตใช้ได้ต่อเนื่อง 5GB wifi",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "T8      "
+                    },
+                    {
+                        "packageGroupCode": "12074381",
+                        "packageGroupDescription": "Table_Net_Non_Stop(799B_NetULM10GB_wifi)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Tablet Net Nonstop 799 Baht, Net Always on 10GB wifi",
+                        "marketingDescriptionThai": "Tablet Net Nonstop 799 บาท เน็ตใช้ได้ต่อเนื่อง 10GB wifi",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "T8      "
+                    },
+                    {
+                        "packageGroupCode": "12074391",
+                        "packageGroupDescription": "Table_Net_Non_Stop(999B_NetULM12GB_wifi)12m-Normal",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Tablet Net Nonstop 999 Baht, Net Always on 12GB wifi",
+                        "marketingDescriptionThai": "Tablet Net Nonstop 999 บาท เน็ตใช้ได้ต่อเนื่อง 12GB wifi",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "T8      "
+                    },
+                    {
+                        "packageGroupCode": "12074401",
+                        "packageGroupDescription": "Corp.PKOn346(24M500B/F250B/OnOff0.99/FUP2GB)-Add",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Biz Package 500 THB/Month",
+                        "marketingDescriptionThai": "แพ็กเกจธุรกิจ500 บ./เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "C1      "
+                    },
+                    {
+                        "packageGroupCode": "12074411",
+                        "packageGroupDescription": "Corp.PKOn347(24M700B/F250B/OnOff0.99/FUP4GB)-Add s",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "Biz Package 700 THB/Month",
+                        "marketingDescriptionThai": "แพ็กเกจธุรกิจ700 บ./เดือน",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "C1      "
+                    },
+                    {
+                        "packageGroupCode": "12074421",
+                        "packageGroupDescription": "LnR_Non_Stop(199B_call80min_net500MB_Wifi)12m-Norm",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "LnR Non Stop_199B,Net Always On 500MB, Free Call80min",
+                        "marketingDescriptionThai": "LnR Non Stop_199บ.เน็ตใช้ได้ต่อเนื่อง 500MB โทร80นาที",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "A2      "
+                    },
+                    {
+                        "packageGroupCode": "12074511",
+                        "packageGroupDescription": "LnR_NonStop(1499Bcall1200min_net10GB_Wifi)12m-Norm",
+                        "switchOnReasonCode": "11000008",
+                        "switchOnReasonDescription": "เปิดปกติไม่มีค่าจดทะเบียน",
+                        "marketingDescription": "LnR Non Stop_1499B,Net Always On 10GB,Free Call 1200min",
+                        "marketingDescriptionThai": "LnR Non Stop_1499บ.เน็ตใช้ได้ต่อเนื่อง 10GB โทร 1200นาที",
+                        "promotionCode": "",
+                        "specialType": "",
+                        "eisGroup": "A2      "
+                    }
+                ],
+                "warningMessage": "warning message"
             }
 -   request:
         method: GET
@@ -542,3 +1139,23 @@
             #         "en": "Registration FAIL",
             #         "th": "ลงทะเบียนล้มเหลว"
             #     }
+-   request:
+        method: POST
+        url: ^/api/mobile/mobileConfig
+    reponse:
+        -   status: 200
+            body: |
+                [
+                    {
+                        "name": "postpaidRegistration.referenceDoc.max",
+                        "value": "3"
+                    },
+                    {
+                        "name": "postpaidRegistration.faceRecognition.attempt.max",
+                        "value": "1"
+                    },
+                    {
+                        "name": "postpaidRegistration.faceDetection.attempt.max",
+                        "value": "3"
+                    }
+                ]
