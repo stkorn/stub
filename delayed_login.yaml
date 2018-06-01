@@ -1137,7 +1137,6 @@
         method: POST
         url: ^/api/mobile/registration
     reponse:
-<<<<<<< HEAD
         -   status: 200
             # latency: 1000
             # headers:
@@ -1168,7 +1167,6 @@
                         "value": "3"
                     }
                 ]
-=======
         -   status: 500
             latency: 1000
             headers:
@@ -1179,4 +1177,3 @@
                     "en": "Registration FAIL",
                     "th": "ลงทะเบียนล้มเหลว"
                 }
->>>>>>> new response face success
