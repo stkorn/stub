@@ -1,6 +1,6 @@
 -   request:
         method: POST
-        url: /api/mobile/login
+        url: ^/api/mobile/login
     response:
         status: 200
         body: |
@@ -32,8 +32,6 @@
                     "channel": "Service Hall"
                 },
                 "retailer": {
-                    "code": "71438887",
-                    "name": "*****"
                 },
                 "screenCodes": [
                     {
@@ -48,9 +46,19 @@
 
 -   request:
         method: GET
-        url: ^/api/mobile/tel/check/.*
+        url: ^/api/mobile/retailer/.*
     response:
         status: 200
+        body: |
+            { 
+                "retailerName" : "จามจุรีย์"
+            } 
+
+-   request:
+        method: GET
+        url: ^/api/mobile/tel/check/.*
+    response:
+        status: 200 
 
 -   request:
         method: POST
