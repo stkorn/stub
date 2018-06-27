@@ -42,9 +42,21 @@
                             "en": "Postpaid Registration",
                             "th": "จดทะเบียนรายเดือน"
                         }
+                    },
+                    {
+                        "code": "M_CHNG_SIM",
+                        "name": {
+                            "en": "M_CHNG_SIM",
+                            "th": "M_CHNG_SIM"
+                        }
                     }
                 ]
             }
+-   request:
+        method: POST
+        url: /api/mobile/reauth
+    response:
+        status: 200
 -   request:
         method: GET
         url: ^/api/mobile/mobileConfig
@@ -61,13 +73,13 @@
         url: ^/api/mobile/tel/check/.*
     response:
         status:  200
-
 -   request:
         method: POST
         url: ^/api/mobile/faceRecognition
     response:
         status: 200
         body: |
+<<<<<<< HEAD
         {
             "titleTH" : "สำเร็จ",
             "th" : "ตรวจสอบใบหน้าผ่าน",
@@ -83,6 +95,15 @@
         }
 
 
+=======
+            {
+                "status": "01",
+                "message": "match",
+                "confidence": "0.97",
+                "timestamp": "20180328113745",
+                "omr_status": "FAIL"
+            }
+>>>>>>> stub change sim
 -   request:
         method: GET
         url: ^/api/mobile/customer/registration/getCompleteRapidRegistration/simBarcode/.*
@@ -1130,14 +1151,14 @@
             # body: |
             #     {
             #         "code": "500",
-            #         "en": "UPLOAD FAIL",
-            #         "th": "อัพโหลดล้มเหลว"
+            #         "en": "Upload FAIL",
+            #         "th": "Upload FAIL"
             #     }
--   request:
-        method: POST
-        url: ^/api/mobile/registration
-    reponse:
-        -   status: 200
+# -   request:
+#         method: POST
+#         url: ^/api/mobile/registration
+#     reponse:
+#         -   status: 200
             # latency: 1000
             # headers:
             #     content-type: application/json
@@ -1147,26 +1168,86 @@
             #         "en": "Registration FAIL",
             #         "th": "ลงทะเบียนล้มเหลว"
             #     }
+# -   request:
+#         method: POST
+#         url: ^/api/mobile/mobileConfig
+#     reponse:
+#         -   status: 200
+#             body: |
+#                 [
+#                     {
+#                         "name": "postpaidRegistration.referenceDoc.max",
+#                         "value": "3"
+#                     },
+#                     {
+#                         "name": "postpaidRegistration.faceRecognition.attempt.max",
+#                         "value": "1"
+#                     },
+#                     {
+#                         "name": "postpaidRegistration.faceDetection.attempt.max",
+#                         "value": "3"
+#                     }
+#                 ]
 -   request:
-        method: POST
-        url: ^/api/mobile/mobileConfig
+        method: GET
+        url: ^/api/mobile/sim/change/reason
     reponse:
         -   status: 200
             body: |
-                [
-                    {
-                        "name": "postpaidRegistration.referenceDoc.max",
-                        "value": "3"
-                    },
-                    {
-                        "name": "postpaidRegistration.faceRecognition.attempt.max",
-                        "value": "1"
-                    },
-                    {
-                        "name": "postpaidRegistration.faceDetection.attempt.max",
-                        "value": "3"
-                    }
-                ]
+                {
+                    "Reasons": [
+                        {
+                            "ChangeReasonCode": "0027",
+                            "ChangeReasonDescription": "เปลี่ยนขนาดซิม"
+                        },
+                        {
+                            "ChangeReasonCode": "0013",
+                            "ChangeReasonDescription": "ซิมหาย"
+                        },
+                        {
+                            "ChangeReasonCode": "0014",
+                            "ChangeReasonDescription": "ซิมเสีย"
+                        }
+                    ]
+                }
+-   request:
+        method: GET
+        url: ^/api/mobile/currentSIM/subscriber/.*
+    reponse:
+        -   status: 200
+            body: |
+                {
+                    "idType" : "01",
+                    "customerNumber": "625049938",
+                    "currentSIMCardNumber": "8966051403443758832",
+                    "imsiPrefix": "52005029",
+                    "imsiNumber": "520050290685891",
+                    "pinNumber1": "XX",
+                    "pinNumber2": "XX",
+                    "pukNumber1": "XX",
+                    "pukNumber2": "XX",
+                    "kiFlag": true,
+                    "eRefillFlag": false,
+                    "multiSIMFlag": false,
+                    "simShortNumber": "0",
+                    "subscriberStatus": "A",
+                    "telephoneType": "TEL",
+                    "companyCode": "20",
+                    "companyName": "TriNet",
+                    "vipState": "",
+                    "subscriberLastChangedDateTime": "2016-01-04 17:08:28",
+                    "smsLang": "T",
+                    "totalSecondarySIM": 0
+                }  
+-   request:
+        method: GET
+        url: ^/api/mobile/customer/owner/.*
+    reponse:
+        -   status: 200
+-   request:
+        method: POST
+        url: ^/api/mobile/cards
+    reponse:
         -   status: 500
             latency: 1000
             headers:
@@ -1174,6 +1255,32 @@
             body: |
                 {
                     "code": "500",
-                    "en": "Registration FAIL",
-                    "th": "ลงทะเบียนล้มเหลว"
+                    "en": "Smartcard FAIL",
+                    "th": "Smartcard FAIL"
+                }
+-   request:
+        method: GET
+        url: ^/api/mobile/sim/verify/.*
+    response:
+        -   status: 200
+            body: |
+                {
+                    "cardDummyFlag": "Y",
+                    "admDecrypt": "47F3BCA7",
+                    "imsiNumber": "520050290687859",
+                    "imsiGroup": "7002"
+                }
+-   request:
+        method: POST
+        url: ^/api/mobile/sim/change
+    reponse:
+        -   status: 500
+            latency: 1000
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "code": "500",
+                    "en": "Save Change SIM FAIL",
+                    "th": "Save Change SIM FAIL"
                 }
