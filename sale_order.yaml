@@ -113,6 +113,12 @@
 
 -   request:
         method: GET
+        url: ^/api/api/mobile/customer/salesorder/isdeviceonly/true/subscriber/66912345678
+    response:
+        status:  500
+
+-   request:
+        method: GET
         url: ^/api/api/mobile/customer/salesorder/isdeviceonly/true/subscriber/.*
     response:
         status:  200
@@ -121,19 +127,6 @@
                 "customerProfile": {},
                 "hasContract": false
             }
-
--   request:
-        method: GET
-        url: ^/api/api/mobile/customer/salesorder/isdeviceonly/true/subscriber/66912345678
-    response:
-        status:  500
-        body: |
-            {
-                "th": "",
-                "en": "subs not available.",
-                "code": "180104"
-            }
-            
 
 -   request:
         method: GET
@@ -151,12 +144,6 @@
         url: ^/api/api/mobile/salesorder/verify/imei/0000
     response:
         status:  500
-        body: |
-            {
-                "th": "",
-                "en": "IMEI not available in stock.",
-                "code": "180104"
-            }
 
 -   request:
         method: GET
