@@ -1,0 +1,250 @@
+-   request:
+        method: POST
+        url: ^/api/api/mobile/login
+    response:
+        status: 200
+        headers:
+            content-type: application/json
+        body: |
+            {
+            "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjZCI6InBxejhzNjFGVWNka0JKV3BvTldXcHJFTTRjWmZEMnlzeWUyK0ZFN3ZaZUU9IiwidXNlcmNvZGUiOiJPTVJCUk5EMTAiLCJ1c2VybGFuIjoiT01SQlJORDEwIn0.v_p-d-G_P7ODg5Gsa11eZtqA-_WwTwCLa79pmnKYr3E",
+            "expiresAt": "479",
+            "profile": {
+                "userCode": "OMRBRND10",
+                "username": "MR. OMRBRND10 Test",
+                "domainName": "NCCADEV",
+                "userChannel": "0002",
+                "group": {
+                "code": "0039",
+                "name": "IS - ISSUE MANAGEMENT + CDR + CORP"
+                },
+                "dataGroup": {
+                "code": "0031",
+                "description": "LOGISTIC SSD"
+                },
+                "team": {
+                "userTeam": "CHAMCHURI002",
+                "teamName": "CHAMCHURI_002",
+                "managerUser": "OMRBRND10"
+                },
+                "locationCode": "02101",
+                "locationName": "สาขาเซ็นทรัลเวิลด์ (HALL)",
+                "telephoneNumber": "-",
+                "email": "",
+                "dealerNumber": "",
+                "channel": "Service Hall"
+            },
+            "retailer": {
+                "code": "",
+                "name": ""
+            },
+            "screenCodes": [
+                {
+                "code": "M_REGS_POST",
+                "name": {
+                    "en": "Postpaid Registration",
+                    "th": "จดทะเบียนรายเดือน"
+                    }
+                }, {
+                "code": "M_CHNG_SIM",
+                "name": {
+                    "en": "M_CHNG_SIM",
+                    "th": "M_CHNG_SIM"
+                    }
+                }, {
+                "code": "M_PRE2_POST",
+                "name": {
+                    "en": "M_PRE2_POST",
+                    "th": "M_PRE2_POST"
+                    }
+                }, {
+                "code": "M_REGS_PRE",
+                "name": {
+                    "en": "M_REGS_PRE",
+                    "th": "M_REGS_PRE"
+                    }
+                }, {
+                "code": "M_SALE_ORDR",
+                "name": {
+                    "en": "M_SALE_ORDR",
+                    "th": "M_SALE_ORDR"
+                    }
+                }, {
+                "code": "M_XNTL_MNP",
+                "name": {
+                    "en": "M_XNTL_MNP",
+                    "th": "M_XNTL_MNP"
+                    }
+                }
+                ]
+            }
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/retailer/.*
+    response:
+        status: 200
+        body: |
+            {
+                "retailerName": "*****"
+            }
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/mobileConfig
+    response:
+        status: 200
+        body: |
+            {
+                "changeSIM.enable.faceRecognition": "false",
+                "changeSIM.readSIM.timeout.max.sec": "5",
+                "changeSIM.writeSIM.timeout.max.sec": "5",
+                "mobile.minimum.version.android": "1.1",
+                "mobile.minimum.version.ios": "1.1",
+                "postpaidRegistration.enable.identityPhotoName": "true",
+                "postpaidRegistration.enable.printCopy": "true",
+                "postpaidRegistration.faceDetection.attempt.max": "3",
+                "postpaidRegistration.faceRecognition.attempt.max": "3",
+                "postpaidRegistration.referenceDoc.max": "3",
+                "pre2post.referenceDoc.photo.max": "3",
+                "prepaidRegistration.referenceDoc.max": "3",
+                "readSmartCard.timeout.max.sec": "20"
+            }
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/customer/salesorder/isdeviceonly/true/subscriber/.*
+    response:
+        status:  200
+        body: |
+            {
+                "customerProfile": {},
+                "hasContract": false
+            }
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/customer/salesorder/isdeviceonly/false/subscriber/.*
+    response:
+        status:  200
+        body: |
+            {
+                "customerProfile": {},
+                "hasContract": true 
+            }
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/salesorder/verify/imei/.*
+    response:
+        status:  200
+        body: |
+            {
+                "orderID": 127919,
+                "productCode": "IPH60016GY0",
+                "productName": "IPHONE 6 16GB SPACE GOLD (MG472TH/A)",
+                "productPrice": 29800,
+                "productQty": 1,
+                "discountAmount": 0,
+                "lineAmount": 29800,
+                "bundleItem": [
+                    {
+                    "itemCode": "ACHDZ200ADT",
+                    "itemName": "ACHDZ200ADT",
+                    "itemPrice": 0,
+                    "quantity": 1,
+                    "lineAmount": 0
+                    },
+                    {
+                    "itemCode": "DHEBCT51BK0",
+                    "itemName": "DHEBCT51BK0",
+                        "itemPrice": 0,
+                        "quantity": 1,
+                        "lineAmount": 0,
+                        "serialized": true
+                        }
+                    ],
+                    "discountItem": [
+                        {
+                        "code": "Auto_POS Promotion2",
+                        "name": "Auto_POS Promo#1",
+                        "lineAmount": 500,
+                        "campaignType": "POS Promotion",
+                        "campaignCode": "POS_YOON2",
+                        "blockPackage": "40000004",
+                        "blockPackageLevel": "PROMOTION",
+                        "IFRS": "0"
+                        },
+                        {
+                        "code": "atlas pos",
+                        "name": "Atlas_POS_Promotion",
+                        "lineAmount": 500,
+                        "campaignType": "POS Promotion",
+                        "campaignCode": "POS Promotion",
+                        "blockPackage": "31003159",
+                        "blockPackageLevel": "PROMOTION",
+                        "IFRS": "0"
+                        },
+                        {
+                        "code": "POS1ID2DEVICE",
+                        "name": "1ID2DEVICE_POS_Promotion",
+                        "lineAmount": 500,
+                        "campaignType": "POS Promotion",
+                        "campaignCode": "POS Promotion",
+                        "blockPackage": "",
+                        "blockPackageLevel": "",
+                        "IFRS": "0"
+                        },
+                        {
+                        "code": "BRANDED003",
+                        "name": "Auto POS discount",
+                        "lineAmount": 500,
+                        "campaignType": "POS Promotion",
+                        "campaignCode": "BRANDED CAMPAIGN 4",
+                        "blockPackage": "",
+                        "blockPackageLevel": "",
+                        "IFRS": "0"
+                        }
+                    ]
+                }
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/bank
+    response:
+        status:  200
+        body: 
+            [
+                {
+                    "code": "BAY",
+                    "name": "Krungsri Ayudthaya Bank"
+                },
+                {
+                    "code": "BBL",
+                    "name": "Bangkok Bank"
+                },
+                {
+                    "code": "CTB",
+                    "name": "CitiBank"
+                },
+                {
+                    "code": "DTN",
+                    "name": "DTN"
+                },
+                {
+                    "code": "HSBC",
+                    "name": "Hong Kong Bank"
+                },
+                {
+                    "code": "KBANK",
+                    "name": "Kasikorn Bank"
+                },
+                {
+                    "code": "KTB",
+                    "name": "Krung Thai Bank"
+                },
+                {
+                    "code": "SCB",
+                    "name": "Siam Commercial Bank"
+                }
+            ]
