@@ -135,6 +135,66 @@
 
 -   request:
         method: GET
+        url: ^/api/api/mobile/salesorder/verify/imei/123456
+    response:
+        status:  200
+        body: |
+            {
+                "orderID": 127919,
+                "productCode": "IPH60016GY0",
+                "productName": "IPHONE 6 16GB SPACE GOLD (MG472TH/A)",
+                "productPrice": 29800,
+                "productQty": 1,
+                "discountAmount": 0,
+                "lineAmount": 29800,
+                "mainPackageDesc" : "Super NonStop 14998B, Net Always On 30GB, Free Call 1000min",
+                "bundleItem": [],
+                "discountItem": [
+                    {
+                    "code": "Auto_POS Promotion2",
+                    "name": "Auto_POS Promo#1",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS_YOON2",
+                    "blockPackage": "40000004",
+                    "blockPackageLevel": "PROMOTION",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "atlas pos",
+                    "name": "Atlas_POS_Promotion",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "31003159",
+                    "blockPackageLevel": "PROMOTION",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "1ID2DEVICE_POS_Promotion",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Auto POS discount",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    }
+                    ]
+                }
+
+-   request:
+        method: GET
         url: ^/api/api/mobile/salesorder/verify/imei/.*
     response:
         status:  200
@@ -147,7 +207,7 @@
                 "productQty": 1,
                 "discountAmount": 0,
                 "lineAmount": 29800,
-                "mainPackageDesc" : "Super NonStop 14998B, Net Always On 30GB, Free Call 1000min"
+                "mainPackageDesc" : "Super NonStop 14998B, Net Always On 30GB, Free Call 1000min",
                 "bundleItem": [
                     {
                     "itemCode": "ACHDZ200ADT",
@@ -165,47 +225,47 @@
                         "serialized": true
                         }
                     ],
-                    "discountItem": [
-                        {
-                        "code": "Auto_POS Promotion2",
-                        "name": "Auto_POS Promo#1",
-                        "lineAmount": 500,
-                        "campaignType": "POS Promotion",
-                        "campaignCode": "POS_YOON2",
-                        "blockPackage": "40000004",
-                        "blockPackageLevel": "PROMOTION",
-                        "IFRS": "0"
-                        },
-                        {
-                        "code": "atlas pos",
-                        "name": "Atlas_POS_Promotion",
-                        "lineAmount": 500,
-                        "campaignType": "POS Promotion",
-                        "campaignCode": "POS Promotion",
-                        "blockPackage": "31003159",
-                        "blockPackageLevel": "PROMOTION",
-                        "IFRS": "0"
-                        },
-                        {
-                        "code": "POS1ID2DEVICE",
-                        "name": "1ID2DEVICE_POS_Promotion",
-                        "lineAmount": 500,
-                        "campaignType": "POS Promotion",
-                        "campaignCode": "POS Promotion",
-                        "blockPackage": "",
-                        "blockPackageLevel": "",
-                        "IFRS": "0"
-                        },
-                        {
-                        "code": "BRANDED003",
-                        "name": "Auto POS discount",
-                        "lineAmount": 500,
-                        "campaignType": "POS Promotion",
-                        "campaignCode": "BRANDED CAMPAIGN 4",
-                        "blockPackage": "",
-                        "blockPackageLevel": "",
-                        "IFRS": "0"
-                        }
+                "discountItem": [
+                    {
+                    "code": "Auto_POS Promotion2",
+                    "name": "Auto_POS Promo#1",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS_YOON2",
+                    "blockPackage": "40000004",
+                    "blockPackageLevel": "PROMOTION",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "atlas pos",
+                    "name": "Atlas_POS_Promotion",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "31003159",
+                    "blockPackageLevel": "PROMOTION",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "1ID2DEVICE_POS_Promotion",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Auto POS discount",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    }
                     ]
                 }
 
@@ -214,7 +274,7 @@
         url: ^/api/api/mobile/bank
     response:
         status:  200
-        body: {
+        body: | 
             [
                 {
                     "code": "BAY",
@@ -249,4 +309,4 @@
                     "name": "Siam Commercial Bank"
                 }
             ]
-        }
+        
