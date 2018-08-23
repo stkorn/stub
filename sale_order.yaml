@@ -147,6 +147,7 @@
                 "productQty": 1,
                 "discountAmount": 0,
                 "lineAmount": 29800,
+                "mainPackageDesc" : "Super NonStop 14998B, Net Always On 30GB, Free Call 1000min"
                 "bundleItem": [
                     {
                     "itemCode": "ACHDZ200ADT",
@@ -213,7 +214,7 @@
         url: ^/api/api/mobile/bank
     response:
         status:  200
-        body: 
+        body: {
             [
                 {
                     "code": "BAY",
@@ -248,3 +249,4 @@
                     "name": "Siam Commercial Bank"
                 }
             ]
+        }
