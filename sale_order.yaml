@@ -113,6 +113,12 @@
 
 -   request:
         method: GET
+        url: ^/api/api/mobile/customer/salesorder/isdeviceonly/true/subscriber/66912345678
+    response:
+        status:  500
+
+-   request:
+        method: GET
         url: ^/api/api/mobile/customer/salesorder/isdeviceonly/true/subscriber/.*
     response:
         status:  200
@@ -132,6 +138,12 @@
                 "customerProfile": {},
                 "hasContract": true 
             }
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/salesorder/verify/imei/0000
+    response:
+        status:  500
 
 -   request:
         method: GET

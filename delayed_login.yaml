@@ -57,7 +57,6 @@
         status: 200
 -   request:
         method: GET
-<<<<<<< HEAD
         url: ^/api/mobile/retailer/.*
     response:
         status: 200
@@ -66,34 +65,18 @@
                 "retailerName" : "จามจุรีย์"
             } 
 
-=======
-        url: ^/api/mobile/mobileConfig
-    response:
-        status: 200
-        body: |
-            {
-                "postpaidRegistration.referenceDoc.max": "3",
-                "postpaidRegistration.faceRecognition.attempt.max": "3",
-                "postpaidRegistration.faceDetection.attempt.max": "3"
-            }
->>>>>>> 5d280ce8c7f7dd9bb04097d030fe8828cd67cd64
 -   request:
         method: GET
         url: ^/api/mobile/tel/check/.*
     response:
-<<<<<<< HEAD
         status: 200 
 
-=======
-        status:  200
->>>>>>> 5d280ce8c7f7dd9bb04097d030fe8828cd67cd64
 -   request:
         method: POST
         url: ^/api/mobile/faceRecognition
     response:
         status: 200
         body: |
-<<<<<<< HEAD
         {
             "titleTH" : "สำเร็จ",
             "th" : "ตรวจสอบใบหน้าผ่าน",
@@ -109,15 +92,6 @@
         }
 
 
-=======
-            {
-                "status": "01",
-                "message": "match",
-                "confidence": "0.97",
-                "timestamp": "20180328113745",
-                "omr_status": "FAIL"
-            }
->>>>>>> stub change sim
 -   request:
         method: GET
         url: ^/api/mobile/customer/registration/getCompleteRapidRegistration/simBarcode/.*
