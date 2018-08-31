@@ -254,6 +254,7 @@
                     "campaignCode": "POS Promotion",
                     "blockPackage": "",
                     "blockPackageLevel": "",
+                    "eform": "1",
                     "IFRS": "0"
                     },
                     {
@@ -309,4 +310,12 @@
                     "name": "Siam Commercial Bank"
                 }
             ]
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/salesorder/getcampaign
+    response:
+        status:  200
+        file: campaignlist.json
+
         
