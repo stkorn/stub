@@ -1,4 +1,16 @@
 -   request:
+        method: GET
+        url: ^/api/api/mobile/health
+    response:
+        status: 200
+        headers:
+            content-type: application/json
+        body: |
+            {
+                "ok": true
+            }
+
+-   request:
         method: POST
         url: ^/api/api/mobile/login
     response:
