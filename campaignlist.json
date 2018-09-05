@@ -1,0 +1,204 @@
+{
+                "discountItem": [
+                    {
+                    "code": "Auto_POS Promotion2",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 1500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS_YOON2",
+                    "blockPackage": "40000004",
+                    "blockPackageLevel": "PROMOTION",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "atlas pos",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 800,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "31003159",
+                    "blockPackageLevel": "PROMOTION",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "POS1ID2DEVICE",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "POS Promotion",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    },
+                    {
+                    "code": "BRANDED003",
+                    "name": "Campaign Auto POS",
+                    "lineAmount": 500,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "IFRS": "0"
+                    }
+                    ]
+                }
