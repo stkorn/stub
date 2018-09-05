@@ -409,6 +409,7 @@
                     "campaignCode": "POS_YOON2",
                     "blockPackage": "40000004",
                     "blockPackageLevel": "PROMOTION",
+                    "eform" : "0",
                     "ifrs": "0"
                     },
                     {
@@ -419,6 +420,7 @@
                     "campaignCode": "POS Promotion",
                     "blockPackage": "31003159",
                     "blockPackageLevel": "PROMOTION",
+                    "eform" : "0",
                     "ifrs": "0"
                     },
                     {
@@ -429,6 +431,7 @@
                     "campaignCode": "POS Promotion",
                     "blockPackage": "",
                     "blockPackageLevel": "",
+                    "eform" : "0",
                     "irfs": "0"
                     },
                     {
@@ -486,6 +489,7 @@
                     "campaignCode": "POS_YOON2",
                     "blockPackage": "40000004",
                     "blockPackageLevel": "PROMOTION",
+                    "eform" : "0",
                     "ifrs": "0"
                     },
                     {
@@ -496,6 +500,7 @@
                     "campaignCode": "POS Promotion",
                     "blockPackage": "31003159",
                     "blockPackageLevel": "PROMOTION",
+                    "eform" : "0",
                     "ifrs": "0"
                     },
                     {
@@ -506,7 +511,7 @@
                     "campaignCode": "POS Promotion",
                     "blockPackage": "",
                     "blockPackageLevel": "",
-                    "efrom":"1"
+                    "efrom":"1",
                     "ifrs": "0"
                     },
                     {
@@ -517,6 +522,7 @@
                     "campaignCode": "BRANDED CAMPAIGN 4",
                     "blockPackage": "",
                     "blockPackageLevel": "",
+                    "eform" : "0",
                     "ifrs": "0"
                     }
                     ]
