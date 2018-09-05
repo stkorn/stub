@@ -1,0 +1,74 @@
+{
+  "fields": [
+    {
+      "id": "IDPin1",
+      "label": "pin 1",
+      "required": true,
+      "default": "pin 1 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin2",
+      "label": "pin 2",
+      "required": false,
+      "default": "pin 2 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin3",
+      "label": "pin3",
+      "required": false,
+      "default": "pin 3 default",
+      "idPinValidation": false
+    },
+    {
+      "id": "IDPin4",
+      "label": "pin4",
+      "required": true,
+      "default": "pin 4 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin4",
+      "label": "pin4",
+      "required": true,
+      "default": "pin 4 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin4",
+      "label": "pin4",
+      "required": true,
+      "default": "pin 4 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin4",
+      "label": "pin4",
+      "required": true,
+      "default": "pin 4 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin4",
+      "label": "pin4",
+      "required": true,
+      "default": "pin 4 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin4",
+      "label": "pin4",
+      "required": true,
+      "default": "pin 4 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin4",
+      "label": "pin4",
+      "required": true,
+      "default": "pin 4 default",
+      "idPinValidation": true
+    }
+  ]
+}
