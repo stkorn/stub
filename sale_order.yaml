@@ -567,6 +567,43 @@
 
 -   request:
         method: GET
+        url: ^/api/api/mobile/card
+    response:
+        status:  200
+        body: | 
+            [
+                {
+                    "code": "AME",
+                    "name": "American Express"
+                },
+                {
+                    "code": "DCR",
+                    "name": "Discovery"
+                },
+                {
+                    "code": "MTC",
+                    "name": "Master Card"
+                },
+                {
+                    "code": "VIS",
+                    "name": "Visa"
+                },
+                {
+                    "code": "KBANK",
+                    "name": "Kasikorn Bank"
+                },
+                {
+                    "code": "KTB",
+                    "name": "Krung Thai Bank"
+                },
+                {
+                    "code": "SCB",
+                    "name": "Siam Commercial Bank"
+                }
+            ]
+
+-   request:
+        method: GET
         url: ^/api/api/mobile/salesorder/getcampaign
     response:
         status:  200
