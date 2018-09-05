@@ -165,7 +165,6 @@
                     "postcodeSequence": "1",
                     "countryCode": "66",
                     "country": "THAILAND",
-                    "lastChangeDatetime": "2013-08-16 02:37:46",
                     "invoiceAlertMethod": "",
                     "invoiceAlertEmail": "",
                     "provinceCode": "01",
@@ -180,20 +179,19 @@
                     "postcodeSequence": "1",
                     "countryCode": "66",
                     "country": "THAILAND",
-                    "lastChangeDatetime": "2013-08-16 02:37:46",
                     "provinceCode": "01",
                     "validProvinceCode": "10"
                 }
                 },
                 "subscriber": {
-                "subscriberNumber": "66816550540",
-                "simcardNumber": "8966051306477575610",
-                "subscriberType": "",
-                "telephoneType": "PRE",
-                "mainPackageCode": "13001201",
-                "mainPackageDescription": "dtac 2B/1st min then 1B/min",
-                "packageGroupCode": "13001203",
-                "packageGroupDescription": "dtac 2B/1st min then 1B/min"
+                    "subscriberNumber": "66816550540",
+                    "simcardNumber": "8966051306477575610",
+                    "subscriberType": "",
+                    "telephoneType": "PRE",
+                    "mainPackageCode": "13001201",
+                    "mainPackageDescription": "dtac 2B/1st min then 1B/min",
+                    "packageGroupCode": "13001203",
+                    "packageGroupDescription": "dtac 2B/1st min then 1B/min"
                 }
             },
             "currentPromotion": {
@@ -297,7 +295,6 @@
                     "postcodeSequence": "1",
                     "countryCode": "66",
                     "country": "THAILAND",
-                    "lastChangeDatetime": "2013-08-16 02:37:46",
                     "invoiceAlertMethod": "",
                     "invoiceAlertEmail": "",
                     "provinceCode": "01",
@@ -312,20 +309,19 @@
                     "postcodeSequence": "1",
                     "countryCode": "66",
                     "country": "THAILAND",
-                    "lastChangeDatetime": "2013-08-16 02:37:46",
                     "provinceCode": "01",
                     "validProvinceCode": "10"
                 }
                 },
                 "subscriber": {
-                "subscriberNumber": "66816550540",
-                "simcardNumber": "8966051306477575610",
-                "subscriberType": "",
-                "telephoneType": "PRE",
-                "mainPackageCode": "13001201",
-                "mainPackageDescription": "dtac 2B/1st min then 1B/min",
-                "packageGroupCode": "13001203",
-                "packageGroupDescription": "dtac 2B/1st min then 1B/min"
+                    "subscriberNumber": "66816550540",
+                    "simcardNumber": "8966051306477575610",
+                    "subscriberType": "",
+                    "telephoneType": "PRE",
+                    "mainPackageCode": "13001201",
+                    "mainPackageDescription": "dtac 2B/1st min then 1B/min",
+                    "packageGroupCode": "13001203",
+                    "packageGroupDescription": "dtac 2B/1st min then 1B/min"
                 }
             },
             "currentPromotion": {
@@ -511,7 +507,7 @@
                     "campaignCode": "POS Promotion",
                     "blockPackage": "",
                     "blockPackageLevel": "",
-                    "efrom":"1",
+                    "eform":"0",
                     "ifrs": "0"
                     },
                     {
