@@ -124,8 +124,129 @@
         status:  200
         body: |
             {
-                "customerProfile": {},
-                "hasContract": false
+            "customerNumber": "601378591",
+            "subscriberNumber": "66816550000",
+            "customerProfile": {
+                "profile": {
+                "customerNumber": "601378591",
+                "billingProductCode": "02",
+                "companyCode": "20",
+                "invoiceAlertLanguage": "T",
+                "groupCode": "0",
+                "groupName": "",
+                "customerStatus": "A",
+                "title": "Mr.",
+                "firstname": "dtac",
+                "lastname": "trinet",
+                "identityType": "01",
+                "identityName": "",
+                "identityDescription": "บัตรประชาชน",
+                "identityNumber": "1234567890121",
+                "gender": "M",
+                "birthDate": "1977-01-01",
+                "mailingAddress": {
+                    "address1": "XXXX",
+                    "address2": "XXXX",
+                    "amphur": "เขตลาดพร้าว",
+                    "province": "กรุงเทพมหานคร",
+                    "postcode": "10230",
+                    "postcodeSequence": "1",
+                    "countryCode": "66",
+                    "country": "THAILAND",
+                    "lastChangeDatetime": "2013-08-16 02:37:46",
+                    "invoiceAlertMethod": "",
+                    "invoiceAlertEmail": "",
+                    "provinceCode": "01",
+                    "validProvinceCode": "10"
+                },
+                "legalAddress": {
+                    "address1": "XXXX",
+                    "address2": "XXXX",
+                    "amphur": "เขตจตุจักร",
+                    "province": "กรุงเทพมหานคร",
+                    "postcode": "10900",
+                    "postcodeSequence": "1",
+                    "countryCode": "66",
+                    "country": "THAILAND",
+                    "lastChangeDatetime": "2013-08-16 02:37:46",
+                    "provinceCode": "01",
+                    "validProvinceCode": "10"
+                }
+                },
+                "subscriber": {
+                "subscriberNumber": "66816550540",
+                "simcardNumber": "8966051306477575610",
+                "subscriberType": "",
+                "telephoneType": "PRE",
+                "mainPackageCode": "13001201",
+                "mainPackageDescription": "dtac 2B/1st min then 1B/min",
+                "packageGroupCode": "13001203",
+                "packageGroupDescription": "dtac 2B/1st min then 1B/min"
+                }
+            },
+            "currentPromotion": {
+                "code": "13001203",
+                "description": "Happy2B1B_GM_Maintenance",
+                "additionalPackages": [
+                {
+                    "code": "41000002",
+                    "description": "Regional Roaming",
+                    "thaiDescription": "",
+                    "type": "45",
+                    "startDateTime": "2013-08-16 02:37:46",
+                    "endDateTime": "",
+                    "expireFlag": "0",
+                    "provisioningStartDateTime": "",
+                    "spkdSequence": "603448009",
+                    "sequenceReference": "0",
+                    "externalRecurring": "N",
+                    "specificExpireFlag": "Y"
+                },
+                {
+                    "code": "31002404",
+                    "description": "MissNoMore/Jaew+_Prepaid",
+                    "thaiDescription": "",
+                    "type": "30",
+                    "startDateTime": "2013-08-16 02:37:46",
+                    "endDateTime": "",
+                    "expireFlag": "0",
+                    "provisioningStartDateTime": "",
+                    "spkdSequence": "603448010",
+                    "sequenceReference": "0",
+                    "externalRecurring": "N",
+                    "specificExpireFlag": "Y"
+                },
+                {
+                    "code": "31000401",
+                    "description": "FreeCAMELregistrationFee_NoExpiredDate",
+                    "thaiDescription": "Happy Go Inter",
+                    "type": "35",
+                    "startDateTime": "2013-08-16 02:37:46",
+                    "endDateTime": "",
+                    "expireFlag": "0",
+                    "provisioningStartDateTime": "",
+                    "spkdSequence": "603448011",
+                    "sequenceReference": "0",
+                    "externalRecurring": "N",
+                    "specificExpireFlag": "Y"
+                },
+                {
+                    "code": "31002683",
+                    "description": "3G provisioning-Pre",
+                    "thaiDescription": "",
+                    "type": "30",
+                    "startDateTime": "2013-08-16 02:37:46",
+                    "endDateTime": "",
+                    "expireFlag": "0",
+                    "provisioningStartDateTime": "",
+                    "spkdSequence": "603448013",
+                    "sequenceReference": "0",
+                    "externalRecurring": "N",
+                    "specificExpireFlag": "Y"
+                }
+                ]
+            },
+            "hasContract": false
             }
 
 -   request:
@@ -135,8 +256,115 @@
         status:  200
         body: |
             {
-                "customerProfile": {},
-                "hasContract": true 
+            "customerNumber": "601378591",
+            "subscriberNumber": "66816550540",
+            "customerProfile": {
+                "profile": {
+                "customerNumber": "601378591",
+                "billingProductCode": "02",
+                "companyCode": "20",
+                "invoiceAlertLanguage": "T",
+                "groupCode": "0",
+                "groupName": "",
+                "customerStatus": "A",
+                "title": "Mr.",
+                "firstname": "dtac",
+                "lastname": "trinet",
+                "identityType": "01",
+                "identityName": "",
+                "identityDescription": "บัตรประชาชน",
+                "identityNumber": "1234567890121",
+                "gender": "M",
+                "birthDate": "1977-01-01",
+                "mailingAddress": {
+                    "address1": "XXXX",
+                    "address2": "XXXX",
+                    "amphur": "เขตลาดพร้าว",
+                    "province": "กรุงเทพมหานคร",
+                    "postcode": "10230",
+                    "postcodeSequence": "1",
+                    "countryCode": "66",
+                    "country": "THAILAND",
+                    "lastChangeDatetime": "2013-08-16 02:37:46",
+                    "invoiceAlertMethod": "",
+                    "invoiceAlertEmail": "",
+                    "provinceCode": "01",
+                    "validProvinceCode": "10"
+                },
+                "legalAddress": {
+                    "address1": "XXXX",
+                    "address2": "XXXX",
+                    "amphur": "เขตจตุจักร",
+                    "province": "กรุงเทพมหานคร",
+                    "postcode": "10900",
+                    "postcodeSequence": "1",
+                    "countryCode": "66",
+                    "country": "THAILAND",
+                    "lastChangeDatetime": "2013-08-16 02:37:46",
+                    "provinceCode": "01",
+                    "validProvinceCode": "10"
+                }
+                },
+                "subscriber": {
+                "subscriberNumber": "66816550540",
+                "simcardNumber": "8966051306477575610",
+                "subscriberType": "",
+                "telephoneType": "PRE",
+                "mainPackageCode": "13001201",
+                "mainPackageDescription": "dtac 2B/1st min then 1B/min",
+                "packageGroupCode": "13001203",
+                "packageGroupDescription": "dtac 2B/1st min then 1B/min"
+                }
+            },
+            "currentPromotion": {
+                "code": "13001203",
+                "description": "Happy2B1B_GM_Maintenance",
+                "additionalPackages": [
+                {
+                    "code": "41000002",
+                    "description": "Regional Roaming",
+                    "thaiDescription": "",
+                    "type": "45",
+                    "startDateTime": "2013-08-16 02:37:46",
+                    "endDateTime": "",
+                    "expireFlag": "0",
+                    "provisioningStartDateTime": "",
+                    "spkdSequence": "603448009",
+                    "sequenceReference": "0",
+                    "externalRecurring": "N",
+                    "specificExpireFlag": "Y"
+                },
+                {
+                    "code": "31000401",
+                    "description": "FreeCAMELregistrationFee_NoExpiredDate",
+                    "thaiDescription": "Happy Go Inter",
+                    "type": "35",
+                    "startDateTime": "2013-08-16 02:37:46",
+                    "endDateTime": "",
+                    "expireFlag": "0",
+                    "provisioningStartDateTime": "",
+                    "spkdSequence": "603448011",
+                    "sequenceReference": "0",
+                    "externalRecurring": "N",
+                    "specificExpireFlag": "Y"
+                },
+                {
+                    "code": "31002683",
+                    "description": "3G provisioning-Pre",
+                    "thaiDescription": "",
+                    "type": "30",
+                    "startDateTime": "2013-08-16 02:37:46",
+                    "endDateTime": "",
+                    "expireFlag": "0",
+                    "provisioningStartDateTime": "",
+                    "spkdSequence": "603448013",
+                    "sequenceReference": "0",
+                    "externalRecurring": "N",
+                    "specificExpireFlag": "Y"
+                }
+                ]
+            },
+            "hasContract": false
             }
 
 -   request:
@@ -159,48 +387,48 @@
                 "productQty": 1,
                 "discountAmount": 0,
                 "lineAmount": 29800,
-                "mainPackageDesc" : "Super NonStop 14998B, Net Always On 30GB, Free Call 1000min",
                 "bundleItem": [],
                 "discountItem": [
                     {
                     "code": "Auto_POS Promotion2",
                     "name": "Auto_POS Promo#1",
-                    "lineAmount": 500,
+                    "amount": 500,
                     "campaignType": "POS Promotion",
                     "campaignCode": "POS_YOON2",
                     "blockPackage": "40000004",
                     "blockPackageLevel": "PROMOTION",
-                    "IFRS": "0"
+                    "ifrs": "0"
                     },
                     {
                     "code": "atlas pos",
                     "name": "Atlas_POS_Promotion",
-                    "lineAmount": 500,
+                    "amount": 500,
                     "campaignType": "POS Promotion",
                     "campaignCode": "POS Promotion",
                     "blockPackage": "31003159",
                     "blockPackageLevel": "PROMOTION",
-                    "IFRS": "0"
+                    "ifrs": "0"
                     },
                     {
                     "code": "POS1ID2DEVICE",
                     "name": "1ID2DEVICE_POS_Promotion",
-                    "lineAmount": 500,
+                    "amount": 500,
                     "campaignType": "POS Promotion",
                     "campaignCode": "POS Promotion",
                     "blockPackage": "",
                     "blockPackageLevel": "",
-                    "IFRS": "0"
+                    "irfs": "0"
                     },
                     {
                     "code": "BRANDED003",
                     "name": "Auto POS discount",
-                    "lineAmount": 500,
+                    "amount": 500,
                     "campaignType": "POS Promotion",
                     "campaignCode": "BRANDED CAMPAIGN 4",
                     "blockPackage": "",
                     "blockPackageLevel": "",
-                    "IFRS": "0"
+                    "eform" : "1",
+                    "ifrs": "0"
                     }
                     ]
                 }
@@ -219,21 +447,21 @@
                 "productQty": 1,
                 "discountAmount": 0,
                 "lineAmount": 29800,
-                "mainPackageDesc" : "Super NonStop 14998B, Net Always On 30GB, Free Call 1000min",
-                "bundleItem": [
-                    {
-                    "itemCode": "ACHDZ200ADT",
-                    "itemName": "ACHDZ200ADT",
-                    "itemPrice": 0,
-                    "quantity": 1,
-                    "lineAmount": 0
-                    },
-                    {
-                    "itemCode": "DHEBCT51BK0",
-                    "itemName": "DHEBCT51BK0",
+                "bundleItem": 
+                    [
+                        {
+                        "itemCode": "ACHDZ200ADT",
+                        "itemName": "ACHDZ200ADT",
                         "itemPrice": 0,
                         "quantity": 1,
-                        "lineAmount": 0,
+                        "amount": 0
+                        },
+                        {
+                        "itemCode": "DHEBCT51BK0",
+                        "itemName": "DHEBCT51BK0",
+                        "itemPrice": 0,
+                        "quantity": 1,
+                        "amount": 0,
                         "serialized": true
                         }
                     ],
@@ -241,42 +469,42 @@
                     {
                     "code": "Auto_POS Promotion2",
                     "name": "Auto_POS Promo#1",
-                    "lineAmount": 500,
+                    "amount": 500,
                     "campaignType": "POS Promotion",
                     "campaignCode": "POS_YOON2",
                     "blockPackage": "40000004",
                     "blockPackageLevel": "PROMOTION",
-                    "IFRS": "0"
+                    "ifrs": "0"
                     },
                     {
                     "code": "atlas pos",
                     "name": "Atlas_POS_Promotion",
-                    "lineAmount": 500,
+                    "amount": 1500,
                     "campaignType": "POS Promotion",
                     "campaignCode": "POS Promotion",
                     "blockPackage": "31003159",
                     "blockPackageLevel": "PROMOTION",
-                    "IFRS": "0"
+                    "ifrs": "0"
                     },
                     {
                     "code": "POS1ID2DEVICE",
                     "name": "1ID2DEVICE_POS_Promotion",
-                    "lineAmount": 500,
+                    "amount": 300,
                     "campaignType": "POS Promotion",
                     "campaignCode": "POS Promotion",
                     "blockPackage": "",
                     "blockPackageLevel": "",
-                    "IFRS": "0"
+                    "ifrs": "0"
                     },
                     {
                     "code": "BRANDED003",
                     "name": "Auto POS discount",
-                    "lineAmount": 500,
+                    "amount": 200,
                     "campaignType": "POS Promotion",
                     "campaignCode": "BRANDED CAMPAIGN 4",
                     "blockPackage": "",
                     "blockPackageLevel": "",
-                    "IFRS": "0"
+                    "ifrs": "0"
                     }
                     ]
                 }
