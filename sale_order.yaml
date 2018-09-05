@@ -1,4 +1,16 @@
 -   request:
+        method: GET
+        url: ^/api/api/mobile/health
+    response:
+        status: 200
+        headers:
+            content-type: application/json
+        body: |
+            {
+                "ok": true
+            }
+
+-   request:
         method: POST
         url: ^/api/api/mobile/login
     response:
@@ -494,6 +506,7 @@
                     "campaignCode": "POS Promotion",
                     "blockPackage": "",
                     "blockPackageLevel": "",
+                    "efrom":"1"
                     "ifrs": "0"
                     },
                     {
@@ -549,4 +562,12 @@
                     "name": "Siam Commercial Bank"
                 }
             ]
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/salesorder/getcampaign
+    response:
+        status:  200
+        file: campaignlist.json
+
         
