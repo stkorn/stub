@@ -428,7 +428,7 @@
                     "blockPackage": "",
                     "blockPackageLevel": "",
                     "eform" : "0",
-                    "irfs": "0"
+                    "ifrs": "0"
                     },
                     {
                     "code": "BRANDED003",
@@ -566,49 +566,20 @@
             ]
 
 -   request:
-        method: GET
-        url: ^/api/api/mobile/card
-    response:
-        status:  200
-        body: | 
-            [
-                {
-                    "code": "AME",
-                    "name": "American Express"
-                },
-                {
-                    "code": "DCR",
-                    "name": "Discovery"
-                },
-                {
-                    "code": "MTC",
-                    "name": "Master Card"
-                },
-                {
-                    "code": "VIS",
-                    "name": "Visa"
-                },
-                {
-                    "code": "KBANK",
-                    "name": "Kasikorn Bank"
-                },
-                {
-                    "code": "KTB",
-                    "name": "Krung Thai Bank"
-                },
-                {
-                    "code": "SCB",
-                    "name": "Siam Commercial Bank"
-                }
-            ]
-
--   request:
-        method: GET
-        url: ^/api/api/mobile/salesorder/getcampaign
+        method: POST
+        url: ^/api/api/mobile/salesorder/campaign
     response:
         status:  200
         file: campaignlist.json
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/salesorder/fields
+    response:
+        status:  200
+        file: getinputfield.json
+
+<<<<<<< HEAD
 -   request:
         method: POST 
         url: ^/api/api/mobile/salesorder/campaign
@@ -617,3 +588,6 @@
         file: campaignlist.json
 
         
+=======
+        
+>>>>>>> 650a0c75bf8fd423e5644a3e6308b597b56a43e9
