@@ -609,4 +609,11 @@
         status:  200
         file: campaignlist.json
 
+-   request:
+        method: POST 
+        url: ^/api/api/mobile/salesorder/campaign
+    response:
+        status:  200
+        file: campaignlist.json
+
         
