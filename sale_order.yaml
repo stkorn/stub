@@ -557,4 +557,10 @@
         status:  200
         file: getinputfield.json
 
-       
+-   request:
+        method: POST 
+        url: ^/api/api/mobile/salesorder/getBundledItemStock
+    response:
+        status:  200
+
+  
