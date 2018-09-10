@@ -36,37 +36,37 @@
       "idPinValidation": true
     },
     {
-      "id": "IDPin4",
-      "label": "pin4",
+      "id": "IDPin5",
+      "label": "pin5",
+      "required": false,
+      "default": "pin 4 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin6",
+      "label": "pin6",
+      "required": false,
+      "default": "pin 4 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin7",
+      "label": "pin7",
       "required": true,
+      "default": "pin 4 default",
+      "idPinValidation": true
+    },
+    {
+      "id": "IDPin8",
+      "label": "pin8",
+      "required": false,
       "default": "pin 4 default",
       "idPinValidation": true
     },
     {
       "id": "IDPin4",
       "label": "pin4",
-      "required": true,
-      "default": "pin 4 default",
-      "idPinValidation": true
-    },
-    {
-      "id": "IDPin4",
-      "label": "pin4",
-      "required": true,
-      "default": "pin 4 default",
-      "idPinValidation": true
-    },
-    {
-      "id": "IDPin4",
-      "label": "pin4",
-      "required": true,
-      "default": "pin 4 default",
-      "idPinValidation": true
-    },
-    {
-      "id": "IDPin4",
-      "label": "pin4",
-      "required": true,
+      "required": false,
       "default": "pin 4 default",
       "idPinValidation": true
     }

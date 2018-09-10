@@ -448,6 +448,7 @@
                         "validityPeriodUnit": ""
                     },
                     {
+<<<<<<< HEAD
                         "code": "BRANDED003",
                         "name": "Auto POS discount",
                         "amount": 500,
@@ -459,6 +460,17 @@
                         "eForm": "0",
                         "validityPeriod": "0",
                         "validityPeriodUnit": ""
+=======
+                    "code": "BRANDED003",
+                    "name": "Auto POS discount",
+                    "lineAmount": 200,
+                    "campaignType": "POS Promotion",
+                    "campaignCode": "BRANDED CAMPAIGN 4",
+                    "blockPackage": "",
+                    "blockPackageLevel": "",
+                    "eform" : "1",
+                    "ifrs": "0"
+>>>>>>> a212f20b426e4febee57a0add9477aa988ca4d36
                     }
                 ]
             } 
