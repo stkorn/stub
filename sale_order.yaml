@@ -153,7 +153,7 @@
                 "identityType": "01",
                 "identityName": "",
                 "identityDescription": "บัตรประชาชน",
-                "identityNumber": "1234567890121",
+                "identityNumber": "*********0121",
                 "gender": "M",
                 "birthDate": "1977-01-01",
                 "mailingAddress": {
@@ -375,158 +375,97 @@
             "hasContract": false
             }
 
--   request:
-        method: GET
-        url: ^/api/api/mobile/salesorder/verify/imei/0000
-    response:
-        status:  500
 
 -   request:
         method: GET
-        url: ^/api/api/mobile/salesorder/verify/imei/123456
+        url: ^/api/api/mobile/salesorder/product
     response:
         status:  200
         body: |
-            {
-                "orderID": 127919,
+          {
+                "orderID": 128159,
                 "productCode": "IPH60016GY0",
-                "productName": "IPHONE 6 16GB SPACE GOLD (MG472TH/A)",
-                "productPrice": 29800,
+                "productName": "IPHONE 6 16GB SPACE GRAY (MG472TH/A)",
+                "productPrice": 22800,
                 "productQty": 1,
                 "discountAmount": 0,
-                "lineAmount": 29800,
-                "bundleItem": [],
-                "discountItem": [
+                "lineAmount": 22800,
+                "bundleItem": [
                     {
-                    "code": "Auto_POS Promotion2",
-                    "name": "Auto_POS Promo#1",
-                    "lineAmount": 500,
-                    "campaignType": "POS Promotion",
-                    "campaignCode": "POS_YOON2",
-                    "blockPackage": "40000004",
-                    "blockPackageLevel": "PROMOTION",
-                    "eform" : "0",
-                    "ifrs": "0"
-                    },
-                    {
-                    "code": "atlas pos",
-                    "name": "Atlas_POS_Promotion",
-                    "lineAmount": 500,
-                    "campaignType": "POS Promotion",
-                    "campaignCode": "POS Promotion",
-                    "blockPackage": "31003159",
-                    "blockPackageLevel": "PROMOTION",
-                    "eform" : "0",
-                    "ifrs": "0"
-                    },
-                    {
-                    "code": "POS1ID2DEVICE",
-                    "name": "1ID2DEVICE_POS_Promotion",
-                    "lineAmount": 500,
-                    "campaignType": "POS Promotion",
-                    "campaignCode": "POS Promotion",
-                    "blockPackage": "",
-                    "blockPackageLevel": "",
-                    "eform" : "0",
-                    "irfs": "0"
-                    },
-                    {
-                    "code": "BRANDED003",
-                    "name": "Auto POS discount",
-                    "lineAmount": 500,
-                    "campaignType": "POS Promotion",
-                    "campaignCode": "BRANDED CAMPAIGN 4",
-                    "blockPackage": "",
-                    "blockPackageLevel": "",
-                    "eform" : "1",
-                    "ifrs": "0"
-                    }
-                    ]
-                }
-
--   request:
-        method: GET
-        url: ^/api/api/mobile/salesorder/verify/imei/.*
-    response:
-        status:  200
-        body: |
-            {
-                "orderID": 127919,
-                "productCode": "IPH60016GY0",
-                "productName": "IPHONE 6 16GB SPACE GOLD (MG472TH/A)",
-                "productPrice": 29800,
-                "productQty": 1,
-                "discountAmount": 0,
-                "lineAmount": 29800,
-                "bundleItem": 
-                    [
-                        {
                         "itemCode": "ACHDZ200ADT",
                         "itemName": "ACHDZ200ADT",
                         "itemPrice": 0,
                         "quantity": 1,
                         "lineAmount": 0
-                        },
-                        {
+                    },
+                    {
                         "itemCode": "DHEBCT51BK0",
                         "itemName": "DHEBCT51BK0",
                         "itemPrice": 0,
                         "quantity": 1,
                         "lineAmount": 0,
                         "serialized": true
-                        }
-                    ],
+                    }
+                ],
                 "discountItem": [
                     {
-                    "code": "Auto_POS Promotion2",
-                    "name": "Auto_POS Promo#1",
-                    "lineAmount": 500,
-                    "campaignType": "POS Promotion",
-                    "campaignCode": "POS_YOON2",
-                    "blockPackage": "40000004",
-                    "blockPackageLevel": "PROMOTION",
-                    "eform" : "0",
-                    "ifrs": "0"
+                        "code": "Auto_POS Promotion2",
+                        "name": "Auto_POS Promo#1",
+                        "amount": 500,
+                        "campaignType": "POS Promotion",
+                        "campaignNameCode": "POS_YOON2",
+                        "blockPackage": "31003158",
+                        "blockPackageLevel": "PROMOTION",
+                        "ifrs": "1",
+                        "eForm": "0",
+                        "validityPeriod": "0",
+                        "validityPeriodUnit": ""
                     },
                     {
-                    "code": "atlas pos",
-                    "name": "Atlas_POS_Promotion",
-                    "lineAmount": 1500,
-                    "campaignType": "POS Promotion",
-                    "campaignCode": "POS Promotion",
-                    "blockPackage": "31003159",
-                    "blockPackageLevel": "PROMOTION",
-                    "eform" : "0",
-                    "ifrs": "0"
+                        "code": "atlas pos",
+                        "name": "Atlas_POS_Promotion",
+                        "amount": 500,
+                        "campaignType": "POS Promotion",
+                        "campaignNameCode": "POS Promotion",
+                        "blockPackage": "31003159",
+                        "blockPackageLevel": "PROMOTION",
+                        "ifrs": "0",
+                        "eForm": "0",
+                        "validityPeriod": "0",
+                        "validityPeriodUnit": ""
                     },
                     {
-                    "code": "POS1ID2DEVICE",
-                    "name": "1ID2DEVICE_POS_Promotion",
-                    "lineAmount": 300,
-                    "campaignType": "POS Promotion",
-                    "campaignCode": "POS Promotion",
-                    "blockPackage": "",
-                    "blockPackageLevel": "",
-                    "eform":"0",
-                    "ifrs": "0"
+                        "code": "POS1ID2DEVICE",
+                        "name": "1ID2DEVICE_POS_Promotion",
+                        "amount": 500,
+                        "campaignType": "POS Promotion",
+                        "campaignNameCode": "POS Promotion",
+                        "blockPackage": "",
+                        "blockPackageLevel": "",
+                        "ifrs": "0",
+                        "eForm": "0",
+                        "validityPeriod": "0",
+                        "validityPeriodUnit": ""
                     },
                     {
-                    "code": "BRANDED003",
-                    "name": "Auto POS discount",
-                    "lineAmount": 200,
-                    "campaignType": "POS Promotion",
-                    "campaignCode": "BRANDED CAMPAIGN 4",
-                    "blockPackage": "",
-                    "blockPackageLevel": "",
-                    "eform" : "0",
-                    "ifrs": "0"
+                        "code": "BRANDED003",
+                        "name": "Auto POS discount",
+                        "amount": 500,
+                        "campaignType": "POS Promotion",
+                        "campaignNameCode": "BRANDED CAMPAIGN 4",
+                        "blockPackage": "",
+                        "blockPackageLevel": "",
+                        "ifrs": "0",
+                        "eForm": "0",
+                        "validityPeriod": "0",
+                        "validityPeriodUnit": ""
                     }
-                    ]
-                }
+                ]
+            } 
 
 -   request:
         method: GET
-        url: ^/api/api/mobile/bank
+        url: ^/api/api/mobile/salesorder/bank/02101
     response:
         status:  200
         body: | 
@@ -567,14 +506,15 @@
 
 -   request:
         method: GET
-        url: ^/api/api/mobile/card
+        url: ^/api/api/mobile/salesorder/listCreditCardType
     response:
         status:  200
         body: | 
             [
                 {
-                    "code": "AME",
-                    "name": "American Express"
+                    "order": 1
+                    "key": "AME",
+                    "value": "American Express"
                 },
                 {
                     "code": "DCR",
@@ -600,14 +540,7 @@
                     "code": "SCB",
                     "name": "Siam Commercial Bank"
                 }
-            ]
-
--   request:
-        method: GET
-        url: ^/api/api/mobile/salesorder/getcampaign
-    response:
-        status:  200
-        file: campaignlist.json
+            ]`
 
 -   request:
         method: POST 
