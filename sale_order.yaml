@@ -136,127 +136,351 @@
         status:  200
         body: |
             {
-            "customerNumber": "601378591",
-            "subscriberNumber": "66816550000",
-            "customerProfile": {
-                "profile": {
-                "customerNumber": "601378591",
-                "billingProductCode": "02",
-                "companyCode": "20",
-                "invoiceAlertLanguage": "T",
-                "groupCode": "0",
-                "groupName": "",
-                "customerStatus": "A",
-                "title": "Mr.",
-                "firstname": "dtac",
-                "lastname": "trinet",
-                "identityType": "01",
-                "identityName": "",
-                "identityDescription": "บัตรประชาชน",
-                "identityNumber": "*********0121",
-                "gender": "M",
-                "birthDate": "1977-01-01",
-                "mailingAddress": {
-                    "address1": "XXXX",
-                    "address2": "XXXX",
-                    "amphur": "เขตลาดพร้าว",
-                    "province": "กรุงเทพมหานคร",
-                    "postcode": "10230",
-                    "postcodeSequence": "1",
-                    "countryCode": "66",
-                    "country": "THAILAND",
-                    "invoiceAlertMethod": "",
-                    "invoiceAlertEmail": "",
-                    "provinceCode": "01",
-                    "validProvinceCode": "10"
+                "customerNumber": "625107793",
+                "subscriberNumber": "66869032106",
+                "customerProfile": {
+                    "profile": {
+                        "customerNumber": "625107793",
+                        "billingProductCode": "02",
+                        "companyCode": "20",
+                        "invoiceAlertLanguage": "T",
+                        "groupCode": "0",
+                        "groupName": "",
+                        "child": "",
+                        "customerStatus": "A",
+                        "title": "khun",
+                        "firstname": "saowanee",
+                        "lastname": "thammanawan",
+                        "identityType": "01",
+                        "identityName": "",
+                        "identityDescription": "บัตรประชาชน",
+                        "identityNumber": "1710500143058",
+                        "gender": "U",
+                        "birthDate": "1997-04-10",
+                        "customerLastChangeDatetime": "2018-04-19 14:27:52",
+                        "customerLastChangeBy": "OMRBRND03",
+                        "billDay": "19",
+                        "nextInvoiceDate": "2018-05-19",
+                        "futureInvoiceDate": "2018-06-19",
+                        "billdayLastChangeDatetime": "2018-04-19 14:27:52",
+                        "leafCust": "",
+                        "expiryDate": "",
+                        "issueDate": "",
+                        "branchCode": "",
+                        "specialUserFlag": "",
+                        "corporateChild": "",
+                        "dealerNumber": "10000002",
+                        "dealerName": "*****",
+                        "callCenterLang": "01",
+                        "nationwide": {
+                            "flag": "N",
+                            "registerDatetime": "",
+                            "registerBy": "",
+                            "history": {
+                                "registerDatetime": "",
+                                "expiredDatetime": "",
+                                "retailerNumber": "",
+                                "retailerName": "",
+                                "salesmanNumber": "",
+                                "createdDatatime": "",
+                                "createdBy": "",
+                                "lastChangeDatetime": "",
+                                "lastChangeBy": ""
+                            }
+                        },
+                        "mailingAddress": {
+                            "address1": "99",
+                            "address2": "บางลำภูล่าง",
+                            "amphur": "เขตคลองสาน",
+                            "province": "กรุงเทพมหานคร",
+                            "postcode": "10600",
+                            "postcodeSequence": "2",
+                            "countryCode": "66",
+                            "country": "THAILAND",
+                            "lastChangeDatetime": "2018-04-19 14:27:52",
+                            "invoiceAlertMethod": "",
+                            "invoiceAlertEmail": "",
+                            "provinceCode": "01",
+                            "validProvinceCode": "10"
+                        },
+                        "occupation": {
+                            "code": "802",
+                            "description": "ไม่ระบุ",
+                            "juristicCode": "1"
+                        },
+                        "nationality": {
+                            "code": "66",
+                            "name": "THAI"
+                        },
+                        "legalAddress": {
+                            "address1": "99",
+                            "address2": "บางลำภูล่าง",
+                            "amphur": "เขตคลองสาน",
+                            "province": "กรุงเทพมหานคร",
+                            "postcode": "10600",
+                            "postcodeSequence": "2",
+                            "countryCode": "66",
+                            "country": "THAILAND",
+                            "lastChangeDatetime": "2018-04-19 14:27:52",
+                            "provinceCode": "01",
+                            "validProvinceCode": "10"
+                        },
+                        "writeOffAddress": {
+                            "address1": "",
+                            "address2": "",
+                            "amphur": "",
+                            "province": "",
+                            "postcode": "",
+                            "postcodeSequence": "",
+                            "countryCode": "",
+                            "country": "",
+                            "lastChangeDatetime": "",
+                            "provinceCode": "",
+                            "validProvinceCode": ""
+                        },
+                        "cdromAddress": {
+                            "address1": "",
+                            "address2": "",
+                            "amphur": "",
+                            "province": "",
+                            "postcode": "",
+                            "postcodeSequence": "",
+                            "countryCode": "",
+                            "country": "",
+                            "lastChangeDatetime": "",
+                            "provinceCode": "",
+                            "validProvinceCode": ""
+                        },
+                        "contactInformation": {
+                            "contactNumber": "88888888888",
+                            "officePhone": "",
+                            "homeFax": "",
+                            "officeFax": "",
+                            "creditContact": "",
+                            "paymentContact": "66869032106",
+                            "email": "annie2r@hotmail.com",
+                            "isSendEmail": ""
+                        },
+                        "alertMethod": {
+                            "smsMethodCode": "1",
+                            "smsSequence": "13027407",
+                            "smsDescription": "SMS",
+                            "smsLastChangeDatetime": "2018-04-19 14:27:52",
+                            "smsCurrent": "Y",
+                            "smsNew": "Y",
+                            "smsOnlyMethodCode": "",
+                            "smsOnlySequence": "",
+                            "smsOnlyDescription": "",
+                            "smsOnlyLastChangeDatetime": "",
+                            "smsOnlyCurrent": "N",
+                            "smsOnlyNew": "N",
+                            "ivrMethodCode": "",
+                            "ivrSequence": "",
+                            "ivrDescription": "",
+                            "ivrLastChangeDatetime": "",
+                            "ivrCurrent": "N",
+                            "ivrNew": "N",
+                            "emailMethodCode": "3",
+                            "emailSequence": "13027408",
+                            "emailDescription": "e-mail",
+                            "emailAddress": "",
+                            "emailLastChangeDatetime": "2018-04-19 14:27:52",
+                            "emailCurrent": "Y",
+                            "emailNew": "Y",
+                            "emailDirty": "N"
+                        }
+                    },
+                    "subscriber": {
+                        "subscriberNumber": "66869032106",
+                        "simcardNumber": "8966051403443782337",
+                        "cardType": "",
+                        "billingProductCode": "02",
+                        "subscriberType": "",
+                        "telephoneType": "TEL",
+                        "title": "khun",
+                        "firstname": "saowanee",
+                        "lastname": "thammanawan",
+                        "status": "A",
+                        "smsUssdAlertLanguage": "T",
+                        "ivrAlertLanguage": "T",
+                        "emailAddress": "",
+                        "postpaidSwitchOnDatetime": "2018-04-19 14:27:52",
+                        "prepaidSwitchOnDatetime": "2018-04-19 14:27:52",
+                        "remark": "",
+                        "switchOnDatetime": "2018-04-19 14:27:52",
+                        "switchOnBy": "OMRBRND03",
+                        "switchOnReasonCode": "11000009",
+                        "switchOffDatetime": "",
+                        "switchOffBy": "",
+                        "switchOffReasonCode": "",
+                        "switchOffReasonDescription": "",
+                        "birthDate": "",
+                        "lastChangeDatetime": "2018-04-19 14:27:52",
+                        "lastChangeBy": "OMRBRND03",
+                        "language": {
+                            "ussdAlertLanguage": "T",
+                            "ivrAlertLanguage": "T",
+                            "smsAlertLanguage": "T"
+                        },
+                        "retailerNumber": "",
+                        "retailerName": "",
+                        "gender": "",
+                        "dealerNumber": "",
+                        "dealerName": "",
+                        "packageCode": "",
+                        "packageDescription": "",
+                        "happyBankRegisterDatetime": "",
+                        "imeiNumber": "",
+                        "brand": "",
+                        "model": "",
+                        "mainPackageCode": "12091441",
+                        "mainPackageDescription": "No Worry 599B NetAlwaysOn40GB call1000m",
+                        "packageGroupCode": "12091442",
+                        "packageGroupDescription": "No Worry 599B NetAlwaysOn40GB call1000m",
+                        "totalSecondarySim": "0",
+                        "argumentCheckFlag": "N",
+                        "regionalRoamingRetailer": "",
+                        "sms1stDate": "",
+                        "sms2ndDate": "",
+                        "nextSuspendDate": ""
+                    }
                 },
-                "legalAddress": {
-                    "address1": "XXXX",
-                    "address2": "XXXX",
-                    "amphur": "เขตจตุจักร",
-                    "province": "กรุงเทพมหานคร",
-                    "postcode": "10900",
-                    "postcodeSequence": "1",
-                    "countryCode": "66",
-                    "country": "THAILAND",
-                    "provinceCode": "01",
-                    "validProvinceCode": "10"
-                }
-                },
-                "subscriber": {
-                    "subscriberNumber": "66816550540",
-                    "simcardNumber": "8966051306477575610",
+                "currentPromotion": {
+                    "code": "12091442",
+                    "description": "No Worry_Fr1M_599B(cal1000_40GBWi_NoEx)_12m-Ready",
+                    "lastInvoiceDate": "",
+                    "nextInvoiceDate": "2018-05-19",
+                    "futureInvoiceDate": "2018-06-19",
+                    "fromPkgpType": "15",
+                    "fromPackCatg": "0",
+                    "telpType": "TEL",
+                    "firstPkgpCode": "12091442",
+                    "lastChangeDateTime": "2018-04-19 14:27:52",
                     "subscriberType": "",
-                    "telephoneType": "PRE",
-                    "mainPackageCode": "13001201",
-                    "mainPackageDescription": "dtac 2B/1st min then 1B/min",
-                    "packageGroupCode": "13001203",
-                    "packageGroupDescription": "dtac 2B/1st min then 1B/min"
-                }
-            },
-            "currentPromotion": {
-                "code": "13001203",
-                "description": "Happy2B1B_GM_Maintenance",
-                "additionalPackages": [
-                {
-                    "code": "41000002",
-                    "description": "Regional Roaming",
-                    "thaiDescription": "",
-                    "type": "45",
-                    "startDateTime": "2013-08-16 02:37:46",
-                    "endDateTime": "",
-                    "expireFlag": "0",
-                    "provisioningStartDateTime": "",
-                    "spkdSequence": "603448009",
-                    "sequenceReference": "0",
-                    "externalRecurring": "N",
-                    "specificExpireFlag": "Y"
+                    "hardwareNumber": "",
+                    "switchOnDateTime": "2018-04-19 14:27:52",
+                    "gender": "U",
+                    "waiveFee": "1",
+                    "authUserFlag": "N",
+                    "billingProductCode": "02",
+                    "authExprFlag": "Y",
+                    "csCustGrupCode": 0,
+                    "csCustGrupName": "",
+                    "mainPackages": [
+                        {
+                            "code": "12091441",
+                            "description": "No Worry_Fr1M_599B(cal1000_40GBWi_NoEx)_12m",
+                            "thaiDescription": "599บ.จ่ายแล้วจบ ไม่มีส่วนเกิน เน็ตต่อเนื่อง40GBโทร1000น",
+                            "type": "10",
+                            "startDateTime": "2018-04-19 14:27:52",
+                            "endDateTime": "2019-04-19 23:59:59",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333239",
+                            "sequenceReference": "0",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "N"
+                        },
+                        {
+                            "code": "11000111",
+                            "description": "Normal(Call0.03Bt_Sec_SMS1B_MMS5B)",
+                            "thaiDescription": "แพ็กเกจ Normal คิดค่าบริการ โทร 0.03บ/วินาที,SMS 1บ.,MMS 5บ.",
+                            "type": "10",
+                            "startDateTime": "2019-04-20 00:00:00",
+                            "endDateTime": "",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333240",
+                            "sequenceReference": "1119333239",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "N"
+                        }
+                    ],
+                    "additionalPackages": [
+                        {
+                            "code": "31000101",
+                            "description": "Standard voice mail",
+                            "thaiDescription": "",
+                            "type": "30",
+                            "startDateTime": "2018-04-19 14:27:52",
+                            "endDateTime": "",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333243",
+                            "sequenceReference": "0",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "Y"
+                        },
+                        {
+                            "code": "31002735",
+                            "description": "Eligible package for Booster (Main) ไทย",
+                            "thaiDescription": "",
+                            "type": "30",
+                            "startDateTime": "2018-04-19 14:27:52",
+                            "endDateTime": "",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333241",
+                            "sequenceReference": "0",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "Y"
+                        },
+                        {
+                            "code": "31002687",
+                            "description": "3G provisioning-Post",
+                            "thaiDescription": "",
+                            "type": "30",
+                            "startDateTime": "2018-04-19 14:27:52",
+                            "endDateTime": "",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333244",
+                            "sequenceReference": "0",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "Y"
+                        },
+                        {
+                            "code": "31003428",
+                            "description": "Bar Inter. All by Cust (London Project)",
+                            "thaiDescription": "",
+                            "type": "30",
+                            "startDateTime": "2018-04-19 14:27:52",
+                            "endDateTime": "",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333242",
+                            "sequenceReference": "0",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "Y"
+                        }
+                    ],
+                    "nextCycle": null
                 },
-                {
-                    "code": "31002404",
-                    "description": "MissNoMore/Jaew+_Prepaid",
-                    "thaiDescription": "",
-                    "type": "30",
-                    "startDateTime": "2013-08-16 02:37:46",
-                    "endDateTime": "",
-                    "expireFlag": "0",
-                    "provisioningStartDateTime": "",
-                    "spkdSequence": "603448010",
-                    "sequenceReference": "0",
-                    "externalRecurring": "N",
-                    "specificExpireFlag": "Y"
-                },
-                {
-                    "code": "31000401",
-                    "description": "FreeCAMELregistrationFee_NoExpiredDate",
-                    "thaiDescription": "Happy Go Inter",
-                    "type": "35",
-                    "startDateTime": "2013-08-16 02:37:46",
-                    "endDateTime": "",
-                    "expireFlag": "0",
-                    "provisioningStartDateTime": "",
-                    "spkdSequence": "603448011",
-                    "sequenceReference": "0",
-                    "externalRecurring": "N",
-                    "specificExpireFlag": "Y"
-                },
-                {
-                    "code": "31002683",
-                    "description": "3G provisioning-Pre",
-                    "thaiDescription": "",
-                    "type": "30",
-                    "startDateTime": "2013-08-16 02:37:46",
-                    "endDateTime": "",
-                    "expireFlag": "0",
-                    "provisioningStartDateTime": "",
-                    "spkdSequence": "603448013",
-                    "sequenceReference": "0",
-                    "externalRecurring": "N",
-                    "specificExpireFlag": "Y"
-                }
-                ]
-            },
-            "hasContract": false
+                "hasContract": false
             }
 
 -   request:
@@ -266,123 +490,360 @@
         status:  200
         body: |
             {
-            "customerNumber": "601378591",
-            "subscriberNumber": "66816550540",
-            "customerProfile": {
-                "profile": {
-                "customerNumber": "601378591",
-                "billingProductCode": "02",
-                "companyCode": "20",
-                "invoiceAlertLanguage": "T",
-                "groupCode": "0",
-                "groupName": "",
-                "customerStatus": "A",
-                "title": "Mr.",
-                "firstname": "dtac",
-                "lastname": "trinet",
-                "identityType": "01",
-                "identityName": "",
-                "identityDescription": "บัตรประชาชน",
-                "identityNumber": "1234567890121",
-                "gender": "M",
-                "birthDate": "1977-01-01",
-                "mailingAddress": {
-                    "address1": "XXXX",
-                    "address2": "XXXX",
-                    "amphur": "เขตลาดพร้าว",
-                    "province": "กรุงเทพมหานคร",
-                    "postcode": "10230",
-                    "postcodeSequence": "1",
-                    "countryCode": "66",
-                    "country": "THAILAND",
-                    "invoiceAlertMethod": "",
-                    "invoiceAlertEmail": "",
-                    "provinceCode": "01",
-                    "validProvinceCode": "10"
+                "customerNumber": "625107793",
+                "subscriberNumber": "66869032106",
+                "customerProfile": {
+                    "profile": {
+                        "customerNumber": "625107793",
+                        "billingProductCode": "02",
+                        "companyCode": "20",
+                        "invoiceAlertLanguage": "T",
+                        "groupCode": "0",
+                        "groupName": "",
+                        "child": "",
+                        "customerStatus": "A",
+                        "title": "khun",
+                        "firstname": "saowanee",
+                        "lastname": "thammanawan",
+                        "identityType": "01",
+                        "identityName": "",
+                        "identityDescription": "บัตรประชาชน",
+                        "identityNumber": "1710500143058",
+                        "gender": "U",
+                        "birthDate": "1997-04-10",
+                        "customerLastChangeDatetime": "2018-04-19 14:27:52",
+                        "customerLastChangeBy": "OMRBRND03",
+                        "billDay": "19",
+                        "nextInvoiceDate": "2018-05-19",
+                        "futureInvoiceDate": "2018-06-19",
+                        "billdayLastChangeDatetime": "2018-04-19 14:27:52",
+                        "leafCust": "",
+                        "expiryDate": "",
+                        "issueDate": "",
+                        "branchCode": "",
+                        "specialUserFlag": "",
+                        "corporateChild": "",
+                        "dealerNumber": "10000002",
+                        "dealerName": "*****",
+                        "callCenterLang": "01",
+                        "nationwide": {
+                            "flag": "N",
+                            "registerDatetime": "",
+                            "registerBy": "",
+                            "history": {
+                                "registerDatetime": "",
+                                "expiredDatetime": "",
+                                "retailerNumber": "",
+                                "retailerName": "",
+                                "salesmanNumber": "",
+                                "createdDatatime": "",
+                                "createdBy": "",
+                                "lastChangeDatetime": "",
+                                "lastChangeBy": ""
+                            }
+                        },
+                        "mailingAddress": {
+                            "address1": "99",
+                            "address2": "บางลำภูล่าง",
+                            "amphur": "เขตคลองสาน",
+                            "province": "กรุงเทพมหานคร",
+                            "postcode": "10600",
+                            "postcodeSequence": "2",
+                            "countryCode": "66",
+                            "country": "THAILAND",
+                            "lastChangeDatetime": "2018-04-19 14:27:52",
+                            "invoiceAlertMethod": "",
+                            "invoiceAlertEmail": "",
+                            "provinceCode": "01",
+                            "validProvinceCode": "10"
+                        },
+                        "occupation": {
+                            "code": "802",
+                            "description": "ไม่ระบุ",
+                            "juristicCode": "1"
+                        },
+                        "nationality": {
+                            "code": "66",
+                            "name": "THAI"
+                        },
+                        "legalAddress": {
+                            "address1": "99",
+                            "address2": "บางลำภูล่าง",
+                            "amphur": "เขตคลองสาน",
+                            "province": "กรุงเทพมหานคร",
+                            "postcode": "10600",
+                            "postcodeSequence": "2",
+                            "countryCode": "66",
+                            "country": "THAILAND",
+                            "lastChangeDatetime": "2018-04-19 14:27:52",
+                            "provinceCode": "01",
+                            "validProvinceCode": "10"
+                        },
+                        "writeOffAddress": {
+                            "address1": "",
+                            "address2": "",
+                            "amphur": "",
+                            "province": "",
+                            "postcode": "",
+                            "postcodeSequence": "",
+                            "countryCode": "",
+                            "country": "",
+                            "lastChangeDatetime": "",
+                            "provinceCode": "",
+                            "validProvinceCode": ""
+                        },
+                        "cdromAddress": {
+                            "address1": "",
+                            "address2": "",
+                            "amphur": "",
+                            "province": "",
+                            "postcode": "",
+                            "postcodeSequence": "",
+                            "countryCode": "",
+                            "country": "",
+                            "lastChangeDatetime": "",
+                            "provinceCode": "",
+                            "validProvinceCode": ""
+                        },
+                        "contactInformation": {
+                            "contactNumber": "88888888888",
+                            "officePhone": "",
+                            "homeFax": "",
+                            "officeFax": "",
+                            "creditContact": "",
+                            "paymentContact": "66869032106",
+                            "email": "annie2r@hotmail.com",
+                            "isSendEmail": ""
+                        },
+                        "alertMethod": {
+                            "smsMethodCode": "1",
+                            "smsSequence": "13027407",
+                            "smsDescription": "SMS",
+                            "smsLastChangeDatetime": "2018-04-19 14:27:52",
+                            "smsCurrent": "Y",
+                            "smsNew": "Y",
+                            "smsOnlyMethodCode": "",
+                            "smsOnlySequence": "",
+                            "smsOnlyDescription": "",
+                            "smsOnlyLastChangeDatetime": "",
+                            "smsOnlyCurrent": "N",
+                            "smsOnlyNew": "N",
+                            "ivrMethodCode": "",
+                            "ivrSequence": "",
+                            "ivrDescription": "",
+                            "ivrLastChangeDatetime": "",
+                            "ivrCurrent": "N",
+                            "ivrNew": "N",
+                            "emailMethodCode": "3",
+                            "emailSequence": "13027408",
+                            "emailDescription": "e-mail",
+                            "emailAddress": "",
+                            "emailLastChangeDatetime": "2018-04-19 14:27:52",
+                            "emailCurrent": "Y",
+                            "emailNew": "Y",
+                            "emailDirty": "N"
+                        }
+                    },
+                    "subscriber": {
+                        "subscriberNumber": "66869032106",
+                        "simcardNumber": "8966051403443782337",
+                        "cardType": "",
+                        "billingProductCode": "02",
+                        "subscriberType": "",
+                        "telephoneType": "TEL",
+                        "title": "khun",
+                        "firstname": "saowanee",
+                        "lastname": "thammanawan",
+                        "status": "A",
+                        "smsUssdAlertLanguage": "T",
+                        "ivrAlertLanguage": "T",
+                        "emailAddress": "",
+                        "postpaidSwitchOnDatetime": "2018-04-19 14:27:52",
+                        "prepaidSwitchOnDatetime": "2018-04-19 14:27:52",
+                        "remark": "",
+                        "switchOnDatetime": "2018-04-19 14:27:52",
+                        "switchOnBy": "OMRBRND03",
+                        "switchOnReasonCode": "11000009",
+                        "switchOffDatetime": "",
+                        "switchOffBy": "",
+                        "switchOffReasonCode": "",
+                        "switchOffReasonDescription": "",
+                        "birthDate": "",
+                        "lastChangeDatetime": "2018-04-19 14:27:52",
+                        "lastChangeBy": "OMRBRND03",
+                        "language": {
+                            "ussdAlertLanguage": "T",
+                            "ivrAlertLanguage": "T",
+                            "smsAlertLanguage": "T"
+                        },
+                        "retailerNumber": "",
+                        "retailerName": "",
+                        "gender": "",
+                        "dealerNumber": "",
+                        "dealerName": "",
+                        "packageCode": "",
+                        "packageDescription": "",
+                        "happyBankRegisterDatetime": "",
+                        "imeiNumber": "",
+                        "brand": "",
+                        "model": "",
+                        "mainPackageCode": "12091441",
+                        "mainPackageDescription": "No Worry 599B NetAlwaysOn40GB call1000m",
+                        "packageGroupCode": "12091442",
+                        "packageGroupDescription": "No Worry 599B NetAlwaysOn40GB call1000m",
+                        "totalSecondarySim": "0",
+                        "argumentCheckFlag": "N",
+                        "regionalRoamingRetailer": "",
+                        "sms1stDate": "",
+                        "sms2ndDate": "",
+                        "nextSuspendDate": ""
+                    }
                 },
-                "legalAddress": {
-                    "address1": "XXXX",
-                    "address2": "XXXX",
-                    "amphur": "เขตจตุจักร",
-                    "province": "กรุงเทพมหานคร",
-                    "postcode": "10900",
-                    "postcodeSequence": "1",
-                    "countryCode": "66",
-                    "country": "THAILAND",
-                    "provinceCode": "01",
-                    "validProvinceCode": "10"
-                }
-                },
-                "subscriber": {
-                    "subscriberNumber": "66816550540",
-                    "simcardNumber": "8966051306477575610",
+                "currentPromotion": {
+                    "code": "12091442",
+                    "description": "No Worry_Fr1M_599B(cal1000_40GBWi_NoEx)_12m-Ready",
+                    "lastInvoiceDate": "",
+                    "nextInvoiceDate": "2018-05-19",
+                    "futureInvoiceDate": "2018-06-19",
+                    "fromPkgpType": "15",
+                    "fromPackCatg": "0",
+                    "telpType": "TEL",
+                    "firstPkgpCode": "12091442",
+                    "lastChangeDateTime": "2018-04-19 14:27:52",
                     "subscriberType": "",
-                    "telephoneType": "PRE",
-                    "mainPackageCode": "13001201",
-                    "mainPackageDescription": "dtac 2B/1st min then 1B/min",
-                    "packageGroupCode": "13001203",
-                    "packageGroupDescription": "dtac 2B/1st min then 1B/min"
-                }
-            },
-            "currentPromotion": {
-                "code": "13001203",
-                "description": "Happy2B1B_GM_Maintenance",
-                "additionalPackages": [
-                {
-                    "code": "41000002",
-                    "description": "Regional Roaming",
-                    "thaiDescription": "",
-                    "type": "45",
-                    "startDateTime": "2013-08-16 02:37:46",
-                    "endDateTime": "",
-                    "expireFlag": "0",
-                    "provisioningStartDateTime": "",
-                    "spkdSequence": "603448009",
-                    "sequenceReference": "0",
-                    "externalRecurring": "N",
-                    "specificExpireFlag": "Y"
+                    "hardwareNumber": "",
+                    "switchOnDateTime": "2018-04-19 14:27:52",
+                    "gender": "U",
+                    "waiveFee": "1",
+                    "authUserFlag": "N",
+                    "billingProductCode": "02",
+                    "authExprFlag": "Y",
+                    "csCustGrupCode": 0,
+                    "csCustGrupName": "",
+                    "mainPackages": [
+                        {
+                            "code": "12091441",
+                            "description": "No Worry_Fr1M_599B(cal1000_40GBWi_NoEx)_12m",
+                            "thaiDescription": "599บ.จ่ายแล้วจบ ไม่มีส่วนเกิน เน็ตต่อเนื่อง40GBโทร1000น",
+                            "type": "10",
+                            "startDateTime": "2018-04-19 14:27:52",
+                            "endDateTime": "2019-04-19 23:59:59",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333239",
+                            "sequenceReference": "0",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "N"
+                        },
+                        {
+                            "code": "11000111",
+                            "description": "Normal(Call0.03Bt_Sec_SMS1B_MMS5B)",
+                            "thaiDescription": "แพ็กเกจ Normal คิดค่าบริการ โทร 0.03บ/วินาที,SMS 1บ.,MMS 5บ.",
+                            "type": "10",
+                            "startDateTime": "2019-04-20 00:00:00",
+                            "endDateTime": "",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333240",
+                            "sequenceReference": "1119333239",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "N"
+                        }
+                    ],
+                    "additionalPackages": [
+                        {
+                            "code": "31000101",
+                            "description": "Standard voice mail",
+                            "thaiDescription": "",
+                            "type": "30",
+                            "startDateTime": "2018-04-19 14:27:52",
+                            "endDateTime": "",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333243",
+                            "sequenceReference": "0",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "Y"
+                        },
+                        {
+                            "code": "31002735",
+                            "description": "Eligible package for Booster (Main) ไทย",
+                            "thaiDescription": "",
+                            "type": "30",
+                            "startDateTime": "2018-04-19 14:27:52",
+                            "endDateTime": "",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333241",
+                            "sequenceReference": "0",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "Y"
+                        },
+                        {
+                            "code": "31002687",
+                            "description": "3G provisioning-Post",
+                            "thaiDescription": "",
+                            "type": "30",
+                            "startDateTime": "2018-04-19 14:27:52",
+                            "endDateTime": "",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333244",
+                            "sequenceReference": "0",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "Y"
+                        },
+                        {
+                            "code": "31003428",
+                            "description": "Bar Inter. All by Cust (London Project)",
+                            "thaiDescription": "",
+                            "type": "30",
+                            "startDateTime": "2018-04-19 14:27:52",
+                            "endDateTime": "",
+                            "expireFlag": "0",
+                            "provisioningStartDateTime": "",
+                            "spkdSequence": "1119333242",
+                            "sequenceReference": "0",
+                            "createBy": "OMRBRND03",
+                            "createDateTime": "2018-04-19 14:27:52",
+                            "lastChangeBy": "OMRBRND03",
+                            "lastChangeDateTime": "2018-04-19 14:27:52",
+                            "externalRecurring": "N",
+                            "specificExpireFlag": "Y"
+                        }
+                    ],
+                    "nextCycle": null
                 },
-                {
-                    "code": "31000401",
-                    "description": "FreeCAMELregistrationFee_NoExpiredDate",
-                    "thaiDescription": "Happy Go Inter",
-                    "type": "35",
-                    "startDateTime": "2013-08-16 02:37:46",
-                    "endDateTime": "",
-                    "expireFlag": "0",
-                    "provisioningStartDateTime": "",
-                    "spkdSequence": "603448011",
-                    "sequenceReference": "0",
-                    "externalRecurring": "N",
-                    "specificExpireFlag": "Y"
-                },
-                {
-                    "code": "31002683",
-                    "description": "3G provisioning-Pre",
-                    "thaiDescription": "",
-                    "type": "30",
-                    "startDateTime": "2013-08-16 02:37:46",
-                    "endDateTime": "",
-                    "expireFlag": "0",
-                    "provisioningStartDateTime": "",
-                    "spkdSequence": "603448013",
-                    "sequenceReference": "0",
-                    "externalRecurring": "N",
-                    "specificExpireFlag": "Y"
-                }
-                ]
-            },
-            "hasContract": false
+                "hasContract": false
             }
 
-
 -   request:
-        method: GET
+        method: POST
         url: ^/api/api/mobile/salesorder/product
     response:
         status:  200
         body: |
-          {
+            {
                 "orderID": 128159,
                 "productCode": "IPH60016GY0",
                 "productName": "IPHONE 6 16GB SPACE GRAY (MG472TH/A)",
@@ -430,21 +891,21 @@
                         "blockPackage": "31003159",
                         "blockPackageLevel": "PROMOTION",
                         "ifrs": "0",
-                        "eForm": "0",
-                        "validityPeriod": "0",
+                        "eForm": "1",
+                        "validityPeriod": "12",
                         "validityPeriodUnit": ""
                     },
                     {
                         "code": "POS1ID2DEVICE",
-                        "name": "1ID2DEVICE_POS_Promotion",
+                        "name": "1ID2DEVICE_POS_Promotion_ssasasaaaaaaaaaaaaaaaaaaaaaa",
                         "amount": 500,
                         "campaignType": "POS Promotion",
                         "campaignNameCode": "POS Promotion",
                         "blockPackage": "",
                         "blockPackageLevel": "",
                         "ifrs": "0",
-                        "eForm": "0",
-                        "validityPeriod": "0",
+                        "eForm": "1",
+                        "validityPeriod": "6",
                         "validityPeriodUnit": ""
                     },
                     {
@@ -456,12 +917,12 @@
                         "blockPackage": "",
                         "blockPackageLevel": "",
                         "ifrs": "0",
-                        "eForm": "0",
-                        "validityPeriod": "0",
+                        "eForm": "1",
+                        "validityPeriod": "24",
                         "validityPeriodUnit": ""
                     }
                 ]
-            } 
+            }
 
 -   request:
         method: GET
@@ -512,35 +973,37 @@
         body: | 
             [
                 {
-                    "order": 1
-                    "key": "AME",
-                    "value": "American Express"
+                    "order": 1,
+                    "key": "AMEX",
+                    "value": "American Express:15",
+                    "valueKey": ""
                 },
                 {
-                    "code": "DCR",
-                    "name": "Discovery"
+                    "order": 2,
+                    "key": "Discover",
+                    "value": "Discover:16",
+                    "valueKey": ""
                 },
                 {
-                    "code": "MTC",
-                    "name": "Master Card"
+                    "order": 3,
+                    "key": "MasterCard",
+                    "value": "Master Card:16",
+                    "valueKey": ""
                 },
                 {
-                    "code": "VIS",
-                    "name": "Visa"
-                },
-                {
-                    "code": "KBANK",
-                    "name": "Kasikorn Bank"
-                },
-                {
-                    "code": "KTB",
-                    "name": "Krung Thai Bank"
-                },
-                {
-                    "code": "SCB",
-                    "name": "Siam Commercial Bank"
+                    "order": 4,
+                    "key": "Visa",
+                    "value": "Visa:16",
+                    "valueKey": ""
                 }
-            ]`
+            ]
+
+-   request:
+        method: POST 
+        url: ^/api/api/mobile/salesorder/getBundledItemStock
+    response:
+        status:  200
+
 
 -   request:
         method: POST 
@@ -555,12 +1018,73 @@
         url: ^/api/api/mobile/salesorder/fields
     response:
         status:  200
-        file: getinputfield.json
+        body: |
+            {
+                "fields": [
+                    {
+                        "id": "Field01",
+                        "label": "SMS Coupon Code",
+                        "required": false,
+                        "default": ""
+                    },
+                    {
+                        "id": "Field02",
+                        "label": "2 Coupon Code",
+                        "required": true,
+                        "default": ""
+                    },
+                    {
+                        "id": "Field03",
+                        "label": "Coupon Code",
+                        "required": false,
+                        "default": ""
+                    }
+                ]
+            }
 
 -   request:
         method: POST 
-        url: ^/api/api/mobile/salesorder/getBundledItemStock
+        url: ^/api/api/mobile/salesorder/discount
     response:
         status:  200
+        body: |
+            {
+                "campaignType": "POS Promotion",
+                "campaignCode": "POS_YOON",
+                "discounts": [
+                    {
+                        "code": "POS123",
+                        "name": "POS Promotion_1",
+                        "amount": 500,
+                        "blockPackage": "",
+                        "validityPeriod": 0,
+                        "validityPeriodUnit": "",
+                        "eForm": "0",
+                        "ifrs": "0",
+                        "blockPackageLevel": ""
+                    },
+                    {
+                        "code": "ABCD",
+                        "name": "POS Promotion_2",
+                        "amount": 1000,
+                        "eForm": "1",
+                        "ifrs": "0",
+                        "blockPackage": "",
+                        "blockPackageLevel": "",
+                        "validityPeriod": 6,
+                        "validityPeriodUnit": ""
+                    },
+                    {
+                        "code": "99ABCD",
+                        "name": "POS Promotion_3 ghghjhjkj0ouythjghjkhkkjhjhjhkhkhjkhjkh",
+                        "amount": 2000,
+                        "eForm": "1",
+                        "ifrs": "0",
+                        "blockPackage": "",
+                        "blockPackageLevel": "",
+                        "validityPeriod": 6,
+                        "validityPeriodUnit": ""
+                    }
 
-  
+                ]
+            }

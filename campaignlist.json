@@ -1,34 +1,29 @@
 {
-    "campaigns": [
+     "campaigns": [
         {
             "name": "1074_USSD_YOON1",
             "period": "12/09/2016-31/03/2019",
             "type": "USSD Promotion",
+            "typeDisplay": "USSD",
             "seqn": 1,
             "code": "1074_USSD_YOON1",
             "moreInfo": "1074_USSD_YOON1"
         },
         {
-            "name": "POSTNET SIT",
-            "period": "12/09/2016-31/12/2020",
-            "type": "Package Promotion",
-            "seqn": 2,
-            "code": "POSTNET SIT",
-            "moreInfo": "<div><b>\n<h2><span style=\"COLOR: #dc143c\">POSTNET Campaign </span></h2></b></div>\n<div>\n<p></p>SIT on 5 - 16 Sep 2016</div>"
-        },
-        {
             "name": "1074_USSD_YOON2",
             "period": "14/09/2016-31/12/2018",
             "type": "USSD Promotion",
-            "seqn": 3,
+            "typeDisplay": "USSD",
+            "seqn": 2,
             "code": "1074_USSD_YOON2",
             "moreInfo": "<span style=\"color:#ff0000;\">1074_USSD_YOON2</span>"
         },
         {
-            "name": "Advance Flexi",
-            "period": "12/09/2016-31/12/2018",
+            "name": "Advance Flexi 12121asdfa sdfs dfas dfasfasfsddfdsf asdfsafasdfasdfasdfasdfasdf",
+            "period": "12/09/2016-31/12/2018 dfsdfasdfasfasfsddfdsf asdfsafasdfasdfasdfasdfasdf",
             "type": "Package Promotion",
-            "seqn": 4,
+            "typeDisplay": "PACKAGE",
+            "seqn": 3,
             "code": "Advance Flexi",
             "moreInfo": "Flexi"
         },
@@ -36,7 +31,8 @@
             "name": "POS_YOON AAAA",
             "period": "15/09/2016-15/10/2020",
             "type": "POS Promotion",
-            "seqn": 5,
+            "typeDisplay": "POS",
+            "seqn": 4,
             "code": "POS_YOON",
             "moreInfo": "<span style=\"color:#ff0000;\">POS_YOON</span>"
         },
@@ -44,7 +40,8 @@
             "name": "Model Discount SIT",
             "period": "12/09/2016-31/12/2020",
             "type": "Model Discount",
-            "seqn": 6,
+            "typeDisplay": "MODEL",
+            "seqn": 5,
             "code": "Model Discount SIT",
             "moreInfo": "Model Discount SIT"
         },
@@ -52,7 +49,8 @@
             "name": "POSTNET",
             "period": "12/09/2016-31/12/2020",
             "type": "Package Promotion",
-            "seqn": 7,
+            "typeDisplay": "PACKAGE",
+            "seqn": 6,
             "code": "POSTNET",
             "moreInfo": "POSTNET"
         },
@@ -60,7 +58,8 @@
             "name": "Test AOU Campaign 01",
             "period": "12/09/2016-25/05/2020",
             "type": "AOU Promotion",
-            "seqn": 8,
+            "typeDisplay": "AOU",
+            "seqn": 7,
             "code": "31013",
             "moreInfo": "<span style=\"COLOR: #0000cd\">1. สามารถใช้ campaign ได้ทั้ง Samsung Galaxy 4 และ IPhone6</span>\n<div><span style=\"COLOR: #0000cd\">2. เมื่อทำการเลือกสินค้าที่ร่วม Promotion แล้วต้องใส่ Code : 234</span><br>\n<div><br></div></div>"
         },
@@ -68,7 +67,8 @@
             "name": "BRANDED CAMPAIGN 3",
             "period": "14/08/2018-14/08/2020",
             "type": "Package Promotion",
-            "seqn": 9,
+            "typeDisplay": "PACKAGE",
+            "seqn": 8,
             "code": "BRANDED CAMPAIGN 3",
             "moreInfo": ""
         },
@@ -76,7 +76,8 @@
             "name": "BRANDED CAMPAIGN 2",
             "period": "10/08/2018-10/08/2020",
             "type": "Package Promotion",
-            "seqn": 10,
+            "typeDisplay": "PACKAGE",
+            "seqn": 9,
             "code": "BRANDED CAMPAIGN 2",
             "moreInfo": ""
         },
@@ -84,7 +85,8 @@
             "name": "Model Discount SIT2",
             "period": "20/07/2018-20/08/2019",
             "type": "Model Discount",
-            "seqn": 11,
+            "typeDisplay": "MODEL",
+            "seqn": 10,
             "code": "Model Discount SIT2",
             "moreInfo": ""
         },
@@ -92,23 +94,17 @@
             "name": "POSTNET ATLAS2",
             "period": "16/01/2018-16/02/2019",
             "type": "Package Promotion",
-            "seqn": 12,
+            "typeDisplay": "PACKAGE",
+            "seqn": 11,
             "code": "POSTNET ATLAS2",
             "moreInfo": ""
-        },
-        {
-            "name": "DTN POS Promotion",
-            "period": "24/10/2017-24/11/2019",
-            "type": "POS Promotion",
-            "seqn": 13,
-            "code": "DTN POS Promotion",
-            "moreInfo": "<b>DTN POS Promotion</b>"
         },
         {
             "name": "SIT3_POSTNET_42",
             "period": "23/03/2017-23/04/2019",
             "type": "Package Promotion",
-            "seqn": 14,
+            "typeDisplay": "PACKAGE",
+            "seqn": 12,
             "code": "SIT3_POSTNET_42",
             "moreInfo": ""
         },
@@ -116,7 +112,8 @@
             "name": "SIT3_POSTNET_43",
             "period": "23/03/2017-23/04/2019",
             "type": "Package Promotion",
-            "seqn": 15,
+            "typeDisplay": "PACKAGE",
+            "seqn": 13,
             "code": "SIT3_POSTNET_43",
             "moreInfo": ""
         },
@@ -124,7 +121,8 @@
             "name": "SIT3_POSTNET_41",
             "period": "22/03/2017-22/04/2019",
             "type": "Package Promotion",
-            "seqn": 16,
+            "typeDisplay": "PACKAGE",
+            "seqn": 14,
             "code": "SIT3_POSTNET_41",
             "moreInfo": ""
         },
@@ -132,7 +130,8 @@
             "name": "SIT3_POSTNET",
             "period": "20/03/2017-20/04/2019",
             "type": "Package Promotion",
-            "seqn": 17,
+            "typeDisplay": "PACKAGE",
+            "seqn": 15,
             "code": "SIT3_POSTNET",
             "moreInfo": ""
         },
@@ -140,7 +139,8 @@
             "name": "SPack3-4",
             "period": "15/03/2017-15/04/2019",
             "type": "Package Promotion",
-            "seqn": 18,
+            "typeDisplay": "PACKAGE",
+            "seqn": 16,
             "code": "SPack3-4",
             "moreInfo": ""
         },
@@ -148,7 +148,8 @@
             "name": "Train BC 20-Oct-2015",
             "period": "12/09/2016-31/12/2019",
             "type": "Package Promotion",
-            "seqn": 19,
+            "typeDisplay": "PACKAGE",
+            "seqn": 17,
             "code": "art1",
             "moreInfo": ""
         },
@@ -156,7 +157,8 @@
             "name": "Ying Yu Nan2016 SIT",
             "period": "12/09/2016-31/12/2019",
             "type": "AOU Promotion",
-            "seqn": 20,
+            "typeDisplay": "AOU",
+            "seqn": 18,
             "code": "26943",
             "moreInfo": "<strong><span style=\"color:#ff0000;\">Ying Yu Nan2016 SIT</span></strong>"
         },
@@ -164,17 +166,10 @@
             "name": "Voucher 1",
             "period": "01/10/2015-30/11/2019",
             "type": "USSD Promotion",
-            "seqn": 21,
+            "typeDisplay": "USSD",
+            "seqn": 19,
             "code": "Voucher 1",
             "moreInfo": "Voucher 1"
-        },
-        {
-            "name": "MNP-USSD 567*118 (1,500B.)",
-            "period": "01/10/2015-31/12/2020",
-            "type": "USSD Promotion",
-            "seqn": 22,
-            "code": "MNP-USSD 567*118 (1,500B.)",
-            "moreInfo": "MNP-USSD 567*118 (1,500B.)"
         }
     ]
 }
