@@ -1,0 +1,153 @@
+{
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjZCI6InBxejhzNjFGVWNka0JKV3BvTldXcHJFTTRjWmZEMnlzeWUyK0ZFN3ZaZUU9IiwidXNlcmNvZGUiOiJPTVJCUk5EMTAiLCJ1c2VybGFuIjoiT01SQlJORDEwIn0.v_p-d-G_P7ODg5Gsa11eZtqA-_WwTwCLa79pmnKYr3E",
+    "expiresAt": "479",
+    "phoneNumber": "",
+    "profile": {
+      "userCode": "OMRBRND10",
+      "username": "MR. OMRBRND10 Test Test",
+      "domainName": "dtacnetwork",
+      "userChannel": "0001",
+      "group": {
+        "code": "0039",
+        "name": "IS - ISSUE MANAGEMENT + CDR + CORP"
+      },
+      "dataGroup": {
+        "code": "0031",
+        "description": "LOGISTIC SSD"
+      },
+      "team": {
+        "userTeam": "CHAMCHURI002",
+        "teamName": "CHAMCHURI_002",
+        "managerUser": "OMRBRND10"
+      },
+      "locationCode": "02101",
+      "locationName": "สาขาเซ็นทรัลเวิลด์ (HALL)",
+      "telephoneNumber": "-",
+      "email": "",
+      "dealerNumber": "",
+      "channel": "Call Center",
+      "channelSubType": "Call Center"
+    },
+    "retailer": {
+      "code": "",
+      "name": ""
+    },
+    "screenCodes": [
+      {
+        "code": "M_REGS_POST",
+        "name": {
+          "en": "Postpaid\nRegistration",
+          "th": "จดทะเบียน\nซิมรายเดือน"
+        }
+      },
+      {
+        "code": "M_CHNG_SIM",
+        "name": {
+          "en": "Change SIM",
+          "th": "ซิมใหม่\nเบอร์เดิม"
+        }
+      },
+      {
+        "code": "M_PRE2_POST",
+        "name": {
+          "en": "Prepaid to\nPostpaid",
+          "th": "เปลี่ยนเติมเงิน\nเป็นรายเดือน"
+        }
+      },
+      {
+        "code": "M_REGS_PRE",
+        "name": {
+          "en": "Prepaid\nRegistration",
+          "th": "จดทะเบียน\nซิมเติมเงิน"
+        }
+      },
+      {
+        "code": "M_XNTL_MNP",
+        "name": {
+          "en": "External MNP",
+          "th": "ย้ายค่าย\nเบอร์เดิม"
+        }
+      },
+      {
+        "code": "M_SALE_ORDR",
+        "name": {
+          "en": "Device Sale",
+          "th": "ซื้อเครื่อง"
+        }
+      },
+      {
+        "code": "M_FACE_RECO",
+        "name": {
+          "en": "Facial\nRecognition",
+          "th": "ยืนยัน\nอัตลักษณ์"
+        }
+      },
+      {
+        "code": "M_HEAL_CHCK",
+        "name": {
+          "en": "Health Check",
+          "th": "ตรวจสุขภาพ\nเครื่อง"
+        }
+      },
+      {
+        "code": "M_DEVC_CALC",
+        "name": {
+          "en": "Device\nCalculator",
+          "th": "คำนวณ\nราคาเครื่อง"
+        }
+      },
+      {
+        "code": "M_COUP_CHCK",
+        "name": {
+          "en": "Check\nCampaign Code",
+          "th": "ตรวจสอบ\nรหัสคูปอง"
+        }
+      },
+      {
+        "code": "M_CHNG_PACK",
+        "name": {
+          "en": "Change\nPackage",
+          "th": "เปลี่ยน\nแพ็กเกจ"
+        }
+      },
+      {
+        "code": "M_CHNG_OWNR_PRE",
+        "name": {
+          "en": "Change Profile\nPrepaid",
+          "th": "แก้ไขข้อมูล\nซิมเติมเงิน"
+        }
+      },
+      {
+        "code": "M_3PRV_SERV",
+        "name": {
+          "en": "M_3PRV_SERV",
+          "th": "M_3PRV_SERV"
+        }
+      }
+    ],
+    "screenCodesMenuBottom": [
+      {
+        "code": "M_ANAL_INFO",
+        "name": {
+          "en": "Analytic Info",
+          "th": "การใช้งาน"
+        }
+      },
+      {
+        "code": "M_ENQY_CUST",
+        "name": {
+          "en": "Enquiry Customer",
+          "th": "ข้อมูลลูกค้า"
+        }
+      }
+    ],
+    "screenCodesUtil": [
+      {
+        "code": "M_TAKE_PHOT",
+        "name": {
+          "en": "Camera",
+          "th": "ถ่ายรูป"
+        }
+      }
+    ]
+  }

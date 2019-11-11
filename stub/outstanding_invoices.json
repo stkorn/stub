@@ -1,0 +1,9 @@
+{
+    "code": "500",
+    "en": "Sorry, we cannot proceed this transaction, Please try again",
+    "th": "ขออภัยค่ะ ไม่สามารถดำเนินการรายการได้ กรุณาลองใหม่อีกครั้งค่ะ",
+    "titleEN": "Error",
+    "titleTH": "เกิดข้อผิดพลาด",
+    "systemMessage": "The account code is empty or does not exist.:CBS-0-102050088",
+    "responseDateTime": "2019-11-11 15:25:49"
+}

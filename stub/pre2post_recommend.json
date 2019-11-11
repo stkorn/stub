@@ -1,0 +1,103 @@
+{
+    "offersInformation": {
+      "color": "1",
+      "colorMessage": "1. แนะนำใช้แพ็ครายเดือนก่อน\n2. แนะนำโปรโมชั่นเครื่อง",
+      "campaignInformation": "",
+      "campaignInformationUrl": "",
+      "averageArpu": "351.75"
+    },
+    "offersPackage": [
+        {
+            "offerId":"123456",
+            "offerScore":"10",
+            "packageCode":"999990",
+            "packageGroupCode":"999991",
+            "packageDescription":"99baht_verygood",
+            "marketingDescriptionThai":"เติมเงิน 99 บาท รักษาทุกโรค BahbahBahbahBahbahBahbahBahbahBahbahBahbah",
+            "flowId":"1"
+        },
+        {
+            "offerId":"234567",
+            "offerScore":"99",
+            "packageCode":"888880",
+            "packageGroupCode":"888881",
+            "packageDescription":"88baht_verygood",
+            "marketingDescriptionThai":"เติมเงิน 88 บาท รักษาทุกโรค BahbahBahbahBahbahBahbahBahbahBahbahBahbah",
+            "flowId":"2"
+        },
+        {
+            "offerId":"123456",
+            "offerScore":"10",
+            "packageCode":"999990",
+            "packageGroupCode":"999991",
+            "packageDescription":"99baht_verygood",
+            "marketingDescriptionThai":"เติมเงิน 99 บาท รักษาทุกโรค BahbahBahbahBahbahBahbahBahbahBahbahBahbah",
+            "flowId":"1"
+        },
+        {
+            "offerId":"234567",
+            "offerScore":"99",
+            "packageCode":"888880",
+            "packageGroupCode":"888881",
+            "packageDescription":"88baht_verygood",
+            "marketingDescriptionThai":"เติมเงิน 88 บาท รักษาทุกโรค BahbahBahbahBahbahBahbahBahbahBahbahBahbah",
+            "flowId":"2"
+        },
+        {
+            "offerId":"123456",
+            "offerScore":"10",
+            "packageCode":"999990",
+            "packageGroupCode":"999991",
+            "packageDescription":"99baht_verygood",
+            "marketingDescriptionThai":"เติมเงิน 99 บาท รักษาทุกโรค BahbahBahbahBahbahBahbahBahbahBahbahBahbah",
+            "flowId":"1"
+        },
+        {
+            "offerId":"234567",
+            "offerScore":"99",
+            "packageCode":"888880",
+            "packageGroupCode":"888881",
+            "packageDescription":"88baht_verygood",
+            "marketingDescriptionThai":"เติมเงิน 88 บาท รักษาทุกโรค BahbahBahbahBahbahBahbahBahbahBahbahBahbah",
+            "flowId":"2"
+        },
+        {
+            "offerId":"123456",
+            "offerScore":"10",
+            "packageCode":"999990",
+            "packageGroupCode":"999991",
+            "packageDescription":"99baht_verygood",
+            "marketingDescriptionThai":"เติมเงิน 99 บาท รักษาทุกโรค BahbahBahbahBahbahBahbahBahbahBahbahBahbah",
+            "flowId":"1"
+        },
+        {
+            "offerId":"234567",
+            "offerScore":"99",
+            "packageCode":"888880",
+            "packageGroupCode":"888881",
+            "packageDescription":"88baht_verygood",
+            "marketingDescriptionThai":"เติมเงิน 88 บาท รักษาทุกโรค BahbahBahbahBahbahBahbahBahbahBahbahBahbah",
+            "flowId":"2"
+        },
+        {
+            "offerId":"123456",
+            "offerScore":"10",
+            "packageCode":"999990",
+            "packageGroupCode":"999991",
+            "packageDescription":"99baht_verygood",
+            "marketingDescriptionThai":"เติมเงิน 99 บาท รักษาทุกโรค BahbahBahbahBahbahBahbahBahbahBahbahBahbah",
+            "flowId":"1"
+        },
+        {
+            "offerId":"234567",
+            "offerScore":"99",
+            "packageCode":"888880",
+            "packageGroupCode":"888881",
+            "packageDescription":"88baht_verygood",
+            "marketingDescriptionThai":"เติมเงิน 88 บาท รักษาทุกโรค BahbahBahbahBahbahBahbahBahbahBahbahBahbah",
+            "flowId":"2"
+        }
+    ],
+    "requesterId": "66100011967_1573464201117959333",
+    "flowIds": []
+}

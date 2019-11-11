@@ -1,63 +1,25 @@
 -   request:
         method: POST
-        url: ^/api/mobile/login
+        url: ^/api/api/mobile/login
     response:
         status: 200
-        body: |
-            {
-                "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjZCI6InBxejhzNjFGVWNka0JKV3BvTldXcHJFTTRjWmZEMnlzeWUyK0ZFN3ZaZUU9IiwidXNlcmNvZGUiOiJPTVJCUk5EMDMiLCJ1c2VybGFuIjoiT01SQlJORDAzIn0.MlMjYr0ugfBOWxjf353XLxV49p169V6RyagtWkUBJWU",
-                "expiresAt": "479",
-                "profile": {
-                    "userCode": "OMRBRND03",
-                    "username": "OMRBRND03",
-                    "userChannel": "0002",
-                    "group": {
-                        "code": "0039",
-                        "name": "IS - ISSUE MANAGEMENT + CDR + CORP"
-                    },
-                    "dataGroup": {
-                        "code": "0099",
-                        "description": "IS ISSUES MANAGEMENT"
-                    },
-                    "team": {
-                        "userTeam": "KHONKAEN001",
-                        "teamName": "KHONKAEN_001",
-                        "managerUser": "OMRBRND01"
-                    },
-                    "locationCode": "80003",
-                    "locationName": "สำนักงานใหญ่  (BATCH APAC)",
-                    "telephoneNumber": "-",
-                    "email": "",
-                    "dealerNumber": "",
-                    "channel": "Service Hall"
-                },
-                "retailer": {
-                },
-                "screenCodes": [
-                    {
-                        "code": "M_REGS_POST",
-                        "name": {
-                            "en": "Postpaid Registration",
-                            "th": "จดทะเบียนรายเดือน"
-                        }
-                    },
-                    {
-                        "code": "M_CHNG_SIM",
-                        "name": {
-                            "en": "M_CHNG_SIM",
-                            "th": "M_CHNG_SIM"
-                        }
-                    }
-                ]
-            }
+        file: stub/login.json
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/mobileConfig
+    response:
+        status: 200
+        file: stub/mobileconfig.json
+
 -   request:
         method: POST
-        url: /api/mobile/reauth
+        url: ^/api/api/mobile/reauth
     response:
         status: 200
 -   request:
         method: GET
-        url: ^/api/mobile/retailer/.*
+        url: ^/api/api/mobile/retailer/.*
     response:
         status: 200
         body: |
@@ -67,34 +29,34 @@
 
 -   request:
         method: GET
-        url: ^/api/mobile/tel/check/.*
+        url: ^/api/api/mobile/tel/check/.*
     response:
         status: 200 
 
 -   request:
         method: POST
-        url: ^/api/mobile/faceRecognition
+        url: ^/api/api/mobile/faceRecognition
     response:
         status: 200
         body: |
-        {
-            "titleTH" : "สำเร็จ",
-            "th" : "ตรวจสอบใบหน้าผ่าน",
-            "titleEN" : "Success",
-            "status" : "00",
-            "code" : "00",
-            "systemMessage" : "Match",
-            "message" : "Match",
-            "confidence" : "0.89865",
-            "omr_status" : "PASS",
-            "en" : "Match",
-            "timestamp" : "20180531105208"
-        }
+            {
+                "titleTH" : "สำเร็จ",
+                "th" : "ตรวจสอบใบหน้าผ่าน",
+                "titleEN" : "Success",
+                "status" : "00",
+                "code" : "00",
+                "systemMessage" : "Match",
+                "message" : "Match",
+                "confidence" : "0.89865",
+                "omr_status" : "PASS",
+                "en" : "Match",
+                "timestamp" : "20180531105208"
+            }
 
 
 -   request:
         method: GET
-        url: ^/api/mobile/customer/registration/getCompleteRapidRegistration/simBarcode/.*
+        url: ^/api/api/mobile/customer/registration/getCompleteRapidRegistration/simBarcode/.*
     reponse:
         status: 200
         body: |
@@ -132,7 +94,7 @@
 
 -   request:
         method: GET
-        url: ^/api/mobile/packageGroup.*
+        url: ^/api/api/mobile/packageGroup.*
     reponse:
         status: 200
         body: |
@@ -152,7 +114,7 @@
             }
 -   request:
         method: POST
-        url: ^/api/mobile/searchPackageGroup/.*
+        url: ^/api/api/mobile/searchPackageGroup/.*
     reponse:
         status: 200
         body: |
@@ -174,7 +136,7 @@
             }
 -   request:
         method: GET
-        url: ^/api/mobile/viewAllPackageGroup/.*
+        url: ^/api/api/mobile/viewAllPackageGroup/.*
     reponse:
         status: 200
         body: |
@@ -735,7 +697,7 @@
             }
 -   request:
         method: GET
-        url: ^/api/mobile/address/province
+        url: ^/api/api/mobile/address/province
     response:
         status: 200
         body: |
@@ -1051,7 +1013,7 @@
             ]
 -   request:
         method: GET
-        url: ^/api/mobile/address/district/.*
+        url: ^/api/api/mobile/address/district/.*
     reponse:
         status: 200
         body: |
@@ -1099,7 +1061,7 @@
             ]
 -   request:
         method: GET
-        url: ^/api/mobile/address/subdistrict/.*
+        url: ^/api/api/mobile/address/subdistrict/.*
     reponse:
         status: 200
         body: |
@@ -1130,7 +1092,7 @@
             }
 -   request:
         method: POST
-        url: ^/api/mobile/uploadAttachments
+        url: ^/api/api/mobile/uploadAttachments
     reponse:
         -   status: 200
             # latency: 1000
@@ -1144,7 +1106,7 @@
             #     }
 # -   request:
 #         method: POST
-#         url: ^/api/mobile/registration
+#         url: ^/api/api/mobile/registration
 #     reponse:
 #         -   status: 200
             # latency: 1000
@@ -1158,7 +1120,7 @@
             #     }
 # -   request:
 #         method: POST
-#         url: ^/api/mobile/mobileConfig
+#         url: ^/api/api/mobile/mobileConfig
 #     reponse:
 #         -   status: 200
 #             body: |
@@ -1178,7 +1140,7 @@
 #                 ]
 -   request:
         method: GET
-        url: ^/api/mobile/sim/change/reason
+        url: ^/api/api/mobile/sim/change/reason
     reponse:
         -   status: 200
             body: |
@@ -1200,7 +1162,7 @@
                 }
 -   request:
         method: GET
-        url: ^/api/mobile/currentSIM/subscriber/.*
+        url: ^/api/api/mobile/currentSIM/subscriber/.*
     reponse:
         -   status: 200
             body: |
@@ -1229,12 +1191,12 @@
                 }  
 -   request:
         method: GET
-        url: ^/api/mobile/customer/owner/.*
+        url: ^/api/api/mobile/customer/owner/.*
     reponse:
         -   status: 200
 -   request:
         method: POST
-        url: ^/api/mobile/cards
+        url: ^/api/api/mobile/cards
     reponse:
         -   status: 500
             latency: 1000
@@ -1248,7 +1210,7 @@
                 }
 -   request:
         method: GET
-        url: ^/api/mobile/sim/verify/.*
+        url: ^/api/api/mobile/sim/verify/.*
     response:
         -   status: 200
             body: |
@@ -1260,7 +1222,7 @@
                 }
 -   request:
         method: POST
-        url: ^/api/mobile/sim/change
+        url: ^/api/api/mobile/sim/change
     reponse:
         -   status: 500
             latency: 1000
@@ -1272,3 +1234,119 @@
                     "en": "Save Change SIM FAIL",
                     "th": "Save Change SIM FAIL"
                 }
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/couponCampaign/queryRechargeCard
+    reponse:
+        -   status: 200
+            file: stub/queryRechargeCard.json
+
+# Customer Enquiry Post
+-   request:
+        method: POST
+        url: ^/api/api/mobile/subscriber/profile
+        post: >
+            {"isAllowSuspendedStatus":"","subscriberNumber":"66850851116","userCode":"OMRBRND10"}
+    reponse:
+        -   status: 200
+            file: stub/enquiry_subscriber_profile.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/customer/subscriber/device/sim/info
+        post: >
+            {"customerNumber":"(.*)","subscriberNumber":"(.*)","telephoneType":"(.*)","userCode":"(.*)"}
+    reponse:
+        -   status: 200
+            file: stub/device_sim_info.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/check/idnumber/profile
+        post: >
+            {"idNumber":"611424634","omrLocation":"02101","subscriberNumber":"66850851116","userCode":"OMRBRND10","userLan":"OMRBRND10"}
+    reponse:
+        -   status: 200
+            file: stub/check_idnumber_profile.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/subscriber/segment
+        post: >
+            {"customerNumber":"(.*)","subscriberNumber":"(.*)","userCode":"(.*)","userLan":"(.*)"}
+    reponse:
+        -   status: 200
+            body: |
+                {"segment": "Blue Member"}
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/subscriber/outstanding/invoices
+        post: >
+            {"customerNumber":"611424634","subscriberNumber":"66850851116","userCode":"OMRBRND10","userLan":"OMRBRND10"}
+    reponse:
+        -   status: 500
+            file: stub/outstanding_invoices.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/customer/subscriber/dataUsageInfo
+        post: >
+            {"customerNumber":"611424634","subscriberNumber":"66850851116","telephoneType":"TEL","userCode":"OMRBRND10"}
+    reponse:
+        -   status: 200
+            file: stub/postpaid_datausageinfo.json
+    
+# Customer Enquiry Pre
+-   request:
+        method: POST
+        url: ^/api/api/mobile/subscriber/profile
+        post: >
+            {"isAllowSuspendedStatus":"","subscriberNumber":"66100011967","userCode":"OMRBRND10"}
+    reponse:
+        -   status: 200
+            file: stub/enquiry_subscriber_profile_pre.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/check/idnumber/profile
+        post: >
+            {"idNumber":"625082776","omrLocation":"02101","subscriberNumber":"66100011967","userCode":"OMRBRND10","userLan":"OMRBRND10"}
+    reponse:
+        -   status: 200
+            file: stub/check_idnumber_profile_pre.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/subscriber/mainBalance
+        post: >
+            {"customerNumber":"625082776","subscriberNumber":"66100011967","userCode":"OMRBRND10","userLan":"OMRBRND10"}
+    reponse:
+        -   status: 200
+            file: stub/pre_mainbalance.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/customer/subscriber/dataUsageInfo
+        post: >
+            {"customerNumber":"625082776","subscriberNumber":"66100011967","telephoneType":"PRE","userCode":"OMRBRND10"}
+    reponse:
+        -   status: 200
+            file: stub/prepaid_datausageinfo.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/customer/subscriber/pre2post/recommended
+        post: >
+            {"subscriberNumber":"(.*)","userCode":"(.*)","userLan":"(.*)"}
+    reponse:
+        -   status: 200
+            latency: 5000
+            file: stub/pre2post_recommend.json
+
+
+
+
+
+
