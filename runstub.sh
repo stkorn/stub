@@ -1,1 +1,1 @@
-java -jar stubby4j-5.0.2.jar -w -s 80 -ds -d stubbyLandingPage/landingAccountGroupAll.yaml -l 10.215.136.192
+java -jar stubby4j520.jar -d delayed_login.yaml -l 192.168.1.119
