@@ -16,6 +16,7 @@
     "switchOnResonCode": "11010008",
     "switchOnResonDescription": "เปิดจาก Postpaid 1800 to 3G (OTA)",
     "switchOnBy": "BATCHSB",
+    "packageGroupCode": "12099999",
     "mainPackages": [
       {
         "code": "11000105",

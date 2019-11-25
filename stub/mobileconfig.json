@@ -21,5 +21,7 @@
     "prepaidRegistration.referenceDoc.max": "3",
     "readSmartCard.timeout.max.sec": "20",
     "toggle.customerEnquiry.showDeviceCalculator": "false",
-    "toggle.newsfeed": "true"
+    "toggle.newsfeed": "true",
+    "display.upsell.numOffers":"5",
+    "toggle.customerEnquiry.showNewDtacRewardSegment": "true"
   }

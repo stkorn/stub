@@ -1296,7 +1296,17 @@
             {"customerNumber":"611424634","subscriberNumber":"66850851116","telephoneType":"TEL","userCode":"OMRBRND10"}
     reponse:
         -   status: 200
+            latency: 0
             file: stub/postpaid_datausageinfo.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/sift/upsell/getOffer
+    reponse:
+        -   status: 200
+            latency: 0
+            file: stub/upsell_getoffer.json
+
     
 # Customer Enquiry Pre
 -   request:
@@ -1342,8 +1352,54 @@
             {"subscriberNumber":"(.*)","userCode":"(.*)","userLan":"(.*)"}
     reponse:
         -   status: 200
-            latency: 5000
+            latency: 0
             file: stub/pre2post_recommend.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/package/authorize/main/postpaid
+    reponse:
+        -   status: 200
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/package/authorize/additional
+    reponse:
+        -   status: 200
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/package/blocking
+    reponse:
+        -   status: 200
+            file: stub/blocking_response.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/package/verify/subscriber
+    reponse:
+        -   status: 200
+            latency: 0
+            file: stub/package_verify_subscriber.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/customer/otp/subscriber/66850851116/transaction/CHNG_PACK
+    reponse:
+        -   status: 200
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/customer/otp/verify/subscriber/.*/otp/1234
+    reponse:
+        -   status: 200
+
+
+
+
+
+
+
 
 
 
