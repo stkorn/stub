@@ -2,10 +2,13 @@
     "subscriberNumber": "66100011967",
     "customerNumber": "625082776",
     "subscriberStatus": "A",
+    "subscriberType": "",
+    "fromPackageCategory": "100",
+    "fromPackageGroupType": "80",
     "companyCode": "20",
     "telephoneType": "PRE",
     "customerIDNumber": "*********6865",
-    "customerTitle": "คุณ",
+    "customerTitle": "นาย",
     "customerFirstName": "นิตยา",
     "customerLastName": "เติมเงิน",
     "groupCode": 0,
@@ -40,5 +43,6 @@
     "nxclFlag": false,
     "nxclTitle": "",
     "nxclMessage": "",
-    "billDay": "0"
+    "billDay": "0",
+    "packageGroupCode": "13002083"
   }

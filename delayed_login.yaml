@@ -1361,11 +1361,34 @@
     reponse:
         -   status: 200
 
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/package/authorize/main/prepaid
+    reponse:
+        -   status: 200
+            body: |
+                {
+                    "code": "21231905",
+                    "description": "NetFUP30GB(4Mbps/128Kbps)130B/30D_USSD_ReApp",
+                    "amount": -130
+                }
+
+
 -   request:
         method: POST
         url: ^/api/api/mobile/package/authorize/additional
     reponse:
         -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "code": "21231905",
+                    "description": "NetFUP30GB(4Mbps/128Kbps)130B/30D_USSD_ReApp",
+                    "amount": -130
+                }
+
 
 -   request:
         method: POST
@@ -1385,6 +1408,12 @@
 -   request:
         method: POST
         url: ^/api/api/mobile/customer/otp/subscriber/66850851116/transaction/CHNG_PACK
+    reponse:
+        -   status: 200
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/customer/otp/subscriber/66100011967/transaction/CHNG_PACK
     reponse:
         -   status: 200
 
