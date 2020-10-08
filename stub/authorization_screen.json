@@ -1,0 +1,8 @@
+{
+    "listAuthorizationByScreen": [
+        {
+            "actionName": "SHOW_DOWN_PACK",
+            "actionDescription": "Show downsell button"
+        }
+    ]
+}

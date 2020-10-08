@@ -1,0 +1,91 @@
+{
+  "requestID": "66945545112_20191112135719_743",
+  "averageArpu3Months": 1829.45,
+  "textMessage": "This is downsell message",
+  "offerList": [
+    {
+      "location": "Recommend_Main_Agent",
+      "locationName": "Recommend Main Package",
+      "flowID": "9455451120004873",
+      "offerScore": 10000,
+      "packageGroupCode": "12098064",
+      "packageCode": "12098061",
+      "packageDescLong": "Free calls any numbers 2500 minutes \u0026 internet unlimited, only 1999 Baht/month for 12 months",
+      "packageDescShort": "SuperNS_1999B(cal2500min_netULMWifi)_12m SuperNS_1999B(cal2500min_netULMWifi)_12m SuperNS_1999B(cal2500min_netULMWifi)_12m",
+      "packageType": "10",
+      "orderEffective": "ND",
+      "sortorder": 2,
+      "packagePrice": ""
+    },
+    {
+      "location": "RecentBuy",
+      "locationName": "Recent Buy",
+      "flowID": "9455451120004865",
+      "offerScore": 1,
+      "packageGroupCode": "",
+      "packageCode": "21300154",
+      "packageDescLong": "Free calls any number 1000 minutes 799 THB/month for 12 months",
+      "packageDescShort": "Volume_All(799B_Fr1000min)12m",
+      "packageType": "20",
+      "orderEffective": "NC",
+      "sortorder": 3,
+      "packagePrice": ""
+    },
+    {
+      "location": "Recommend_Main_Agent",
+      "locationName": "Recommend Main Package",
+      "flowID": "9455451120004873",
+      "offerScore": 10000,
+      "packageGroupCode": "12098064",
+      "packageCode": "12098061",
+      "packageDescLong": "Free calls any numbers 2500 minutes \u0026 internet unlimited, only 1999 Baht/month for 12 months",
+      "packageDescShort": "SuperNS_1999B(cal2500min_netULMWifi)_12m SuperNS_1999B(cal2500min_netULMWifi)_12m SuperNS_1999B(cal2500min_netULMWifi)_12m",
+      "packageType": "10",
+      "orderEffective": "ND",
+      "sortorder": 2,
+      "packagePrice": ""
+    },
+    {
+      "location": "RecentBuy",
+      "locationName": "Recent Buy",
+      "flowID": "9455451120004865",
+      "offerScore": 1,
+      "packageGroupCode": "",
+      "packageCode": "21300154",
+      "packageDescLong": "Free calls any number 1000 minutes 799 THB/month for 12 months",
+      "packageDescShort": "Volume_All(799B_Fr1000min)12m",
+      "packageType": "20",
+      "orderEffective": "NC",
+      "sortorder": 3,
+      "packagePrice": ""
+    },
+    {
+      "location": "Recommend_Main_Agent",
+      "locationName": "Recommend Main Package",
+      "flowID": "9455451120004873",
+      "offerScore": 10000,
+      "packageGroupCode": "12098064",
+      "packageCode": "12098061",
+      "packageDescLong": "Free calls any numbers 2500 minutes \u0026 internet unlimited, only 1999 Baht/month for 12 months",
+      "packageDescShort": "SuperNS_1999B(cal2500min_netULMWifi)_12m SuperNS_1999B(cal2500min_netULMWifi)_12m SuperNS_1999B(cal2500min_netULMWifi)_12m",
+      "packageType": "10",
+      "orderEffective": "ND",
+      "sortorder": 2,
+      "packagePrice": ""
+    },
+    {
+      "location": "RecentBuy",
+      "locationName": "Recent Buy",
+      "flowID": "9455451120004865",
+      "offerScore": 1,
+      "packageGroupCode": "",
+      "packageCode": "21300154",
+      "packageDescLong": "Free calls any number 1000 minutes 799 THB/month for 12 months",
+      "packageDescShort": "Volume_All(799B_Fr1000min)12m",
+      "packageType": "20",
+      "orderEffective": "NC",
+      "sortorder": 3,
+      "packagePrice": ""
+    }
+  ]
+}

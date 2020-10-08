@@ -1,0 +1,28 @@
+{
+  "campaignType": "Package Promotion",
+  "campaignCode": "BRANDED CAMPAIGN 5",
+  "discounts": [
+    {
+      "code": "ABCD",
+      "name": "Promotion_1",
+      "amount": 2000,
+      "blockPackage": "",
+      "validityPeriod": 12,
+      "validityPeriodUnit": "Month",
+      "eForm": "1",
+      "ifrs": "0",
+      "blockPackageLevel": ""
+    },
+    {
+      "code": "FSXD",
+      "name": "Promotion_2",
+      "amount": 200,
+      "blockPackage": "",
+      "validityPeriod": 0,
+      "validityPeriodUnit": "",
+      "eForm": "0",
+      "ifrs": "0",
+      "blockPackageLevel": ""
+    }
+  ]
+}

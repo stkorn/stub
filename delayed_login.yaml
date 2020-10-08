@@ -28,6 +28,26 @@
             } 
 
 -   request:
+        method: POST
+        url: ^/api/api/mobile/login/otp/subscriber/66989900700
+    response:
+        status: 200
+        body: |
+            {
+                "otpReferenceCode" : "ABCD55"
+            }
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/login/otp/verify/subscriber/.*/otp/.*
+    response:
+        status: 200
+        body: |
+            {
+                "otpReferenceCode" : "ABCD55"
+            }
+
+-   request:
         method: GET
         url: ^/api/api/mobile/tel/check/.*
     response:
@@ -1090,6 +1110,27 @@
                     }
                 ]
             }
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/address/province/.*/district/.*
+    reponse:
+        status: 200
+        body: |
+            {
+                "data": [
+                    {
+                        "ProvinceCode": "32",
+                        "PostcodeSeq": "112",
+                        "AmphurName": "เสิงสาง",
+                        "Postcode": "30330",
+                        "CountryCode": "66",
+                        "CountryName": "ไทย",
+                        "ProvinceName": "นครราชสีมา"
+                    }
+                ]
+            }
+
 -   request:
         method: POST
         url: ^/api/api/mobile/uploadAttachments
@@ -1104,20 +1145,20 @@
             #         "en": "Upload FAIL",
             #         "th": "Upload FAIL"
             #     }
-# -   request:
-#         method: POST
-#         url: ^/api/api/mobile/registration
-#     reponse:
-#         -   status: 200
-            # latency: 1000
-            # headers:
-            #     content-type: application/json
-            # body: |
-            #     {
-            #         "code": "500",
-            #         "en": "Registration FAIL",
-            #         "th": "ลงทะเบียนล้มเหลว"
-            #     }
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/registration
+    reponse:
+        -   status: 200
+            latency: 1000
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "CustomerNumber": "1381974502"
+                }
+
 # -   request:
 #         method: POST
 #         url: ^/api/api/mobile/mobileConfig
@@ -1307,6 +1348,22 @@
             latency: 0
             file: stub/upsell_getoffer.json
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/sift/downsell/getOffer
+    reponse:
+        -   status: 200
+            latency: 5000
+            file: stub/downsell_getoffer.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/authorization/screen
+    reponse:
+        -   status: 200
+            latency: 5000
+            file: stub/authorization_screen.json
+
     
 # Customer Enquiry Pre
 -   request:
@@ -1423,15 +1480,275 @@
     reponse:
         -   status: 200
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/dah/maps/checkService
+    reponse:
+        -   status: 200
+            latency: 500
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "locationToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbmMiOiJiZDk3Y2JmNzAyMzM1MjNmYWNmYzdjOGZlNTIyMGQ3NmFlNmI0M2U3ZWVlZmFhNTIxN2Q2YTg4ZmJiOGUwMTc2YTgzMGQwMGU2MDI5ODY4ZWZmYjRjMGRiNjUwMWYzYzlhYjU1MjBlYTNhZjY5OTlkMTgyNjI3MGY0OWZkZDI4OGJhNTFmMzRlNDE2ZmIwNzNlNDI0OWQ5NWUzODI3MjU3ZTUxODcwNWFjYTNkMGU5Mzg3ZjRjYmVhYzQyNDRkOGNiZjYzNmNjYjc2NTgxMWM1ZDNhYzA5NjA1NTQ5ZGJlMmRlOTFiYWFiMjQ2NGFlOTkxZjIzZGRmMzU4N2U2MWU0IiwiaWF0IjoxNTg0MDY5NTMwLCJleHAiOjE1ODQwNzEzMzB9.m3u7GAG3tRYMvSNnBd2ka3xwWDVq8XglY3fduUTfjqg"
+                }
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/dah/maps/autocomplete
+    reponse:
+        -   status: 200
+            file: stub/autocomplete_list_response.json
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/dah/maps/location
+    reponse:
+        -   status: 200
+            latency: 500
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "latitude": "13.8192167",
+                    "longitude" "100.5277806"
+                }
 
+-   request:
+        method: GET
+        url: ^/api/api/mobile/customer/postpaid/newRegistration/simBarcode/.*
+    reponse:
+        -   status: 200
+            file: stub/barcode_normal.success_new.json
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/check/deviceSummary
+    reponse:
+        -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "canBuyDeviceWithContract":"Y"
+                }
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/blacklistSharing/check/externalBlacklistFlag
+    reponse:
+        -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "blacklistFlag":"Y"
+                }
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/blacklistSharing/template
+    reponse:
+        -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "blacklistSharingConsentImage":""
+                }
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/blacklistSharing/save
+    reponse:
+        -   status: 200
 
+-   request:
+        method: GET
+        url: ^/api/api/mobile/customer/validate/hardwareNumber/.*
+    reponse:
+        -   status: 200
+            file: stub/get_new_imei_response.json
 
+-   request:
+        method: GET
+        url: ^/api/api/mobile/allPackageGroup?.*
+    reponse:
+        -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "packageGroupRefNo":"1596371024625317104_OMRBRND10"
+                }
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/salesorder/product
+    reponse:
+        -   status: 200
+            file: stub/sales_order_product.success.json
 
+-   request:
+        method: POST
+        url: ^/api/api/mobile/salesorder/campaign
+    reponse:
+        -   status: 200
+            file: stub/sales_order_campaign.success.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/salesorder/fields
+    reponse:
+        -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "fields":[]
+                }
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/salesorder/discount
+    reponse:
+        -   status: 200
+            file: stub/sales_order_get_discount.success.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/salesorder/validateContract
+    reponse:
+        -   status: 200
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/salesorder/listCreditCardType
+    reponse:
+        -   status: 200
+            file: stub/credit_card_type.success.json
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/salesorder/penalty/12
+    reponse:
+        -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "contractPeriod":"12",
+                    "penaltyRate":"6,000"
+                }
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/blacklistSharing/check/otherOperator
+    reponse:
+        -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "result":"01"
+                }
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/customer/salesorder/subscriber/.*/location/.*
+    reponse:
+        -   status: 200
+            file: stub/sales_order_verify_subscriber_y.success.json
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/salesorder/penalty/12
+    reponse:
+        -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "contractPeriod":"12",
+                    "penaltyRate":"6,000"
+                }
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/blacklistSharing/getExtraAdvanceDetail
+    reponse:
+        -   status: 200
+            file: stub/extra_advance_payment_info.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/blacklistSharing/getExtraAdvanceMaster
+    reponse:
+        -   status: 200
+            file: stub/extra_advance_payment.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/salesorder/submit
+    reponse:
+        -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "InvoiceURL":"",
+                    "orderId":"",
+                    "orderNumber":""
+                }
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/sim/product
+    reponse:
+        -   status: 200
+            file: stub/product_sim_post_guest.success.json
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/customer/prepaid/newRegistration/simBarcode/.*
+    reponse:
+        -   status: 200
+            file: stub/pre_regist_barcode_success.json
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/couponCampaign/cardset
+    reponse:
+        -   status: 200
+
+-   request:
+        method: GET
+        url: ^/api/api/mobile/pre/check/idnumber/1234567890121/type/01
+    reponse:
+        -   status: 200
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/prepaid/registration
+    reponse:
+        -   status: 200
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/prepaid/registrationNationwide
+    reponse:
+        -   status: 200
+
+-   request:
+        method: POST
+        url: ^/api/api/mobile/sim/cutSIMStock
+    reponse:
+        -   status: 200
+            headers:
+                content-type: application/json
+            body: |
+                {
+                    "orderId":"12345",
+                    "orderNumber":"12345"
+                }
 

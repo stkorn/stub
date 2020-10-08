@@ -23,5 +23,8 @@
     "toggle.customerEnquiry.showDeviceCalculator": "false",
     "toggle.newsfeed": "true",
     "display.upsell.numOffers":"5",
-    "toggle.customerEnquiry.showNewDtacRewardSegment": "true"
+    "toggle.customerEnquiry.showNewDtacRewardSegment": "true",
+    "mobile.login.enable.2FactorAuthen": "true",
+    "toggle.mobile.enableBlacklistSharing": "true",
+    "toggle.mobile.enableOneSCM": "true"
   }

@@ -1,0 +1,26 @@
+[
+  {
+    "order": 1,
+    "key": "AMEX",
+    "value": "American Express:15",
+    "valueKey": ""
+  },
+  {
+    "order": 2,
+    "key": "Discover",
+    "value": "Discover:16",
+    "valueKey": ""
+  },
+  {
+    "order": 3,
+    "key": "MasterCard",
+    "value": "Master Card:16",
+    "valueKey": ""
+  },
+  {
+    "order": 4,
+    "key": "Visa",
+    "value": "Visa:16",
+    "valueKey": ""
+  }
+]

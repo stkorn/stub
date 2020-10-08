@@ -1,0 +1,58 @@
+{
+  "campaigns": [
+    {
+      "name": "BRANDED CAMPAIGN 5",
+      "period": "14/08/2018-14/08/2020",
+      "type": "Package Promotion",
+      "typeDisplay": "PACKAGE",
+      "seqn": 0,
+      "code": "BRANDED CAMPAIGN 5",
+      "moreInfo": ""
+    },
+    {
+      "name": "1074_USSD_YOON1",
+      "period": "12/09/2016-31/03/2019",
+      "type": "USSD Promotion",
+      "typeDisplay": "USSD",
+      "seqn": 1,
+      "code": "1074_USSD_YOON1",
+      "moreInfo": "1074_USSD_YOON1"
+    },
+    {
+      "name": "Advance Flexi",
+      "period": "12/09/2016-31/12/2018",
+      "type": "Package Promotion",
+      "typeDisplay": "PACKAGE",
+      "seqn": 3,
+      "code": "Advance Flexi",
+      "moreInfo": "Flexi"
+    },
+    {
+      "name": "POSTNET",
+      "period": "12/09/2016-31/12/2020",
+      "type": "Package Promotion",
+      "typeDisplay": "PACKAGE",
+      "seqn": 6,
+      "code": "POSTNET",
+      "moreInfo": "POSTNET"
+    },
+    {
+      "name": "BRANDED CAMPAIGN 3",
+      "period": "14/08/2018-14/08/2020",
+      "type": "Package Promotion",
+      "typeDisplay": "PACKAGE",
+      "seqn": 8,
+      "code": "BRANDED CAMPAIGN 3",
+      "moreInfo": ""
+    },
+    {
+      "name": "BRANDED CAMPAIGN 2",
+      "period": "10/08/2018-10/08/2020",
+      "type": "Package Promotion",
+      "typeDisplay": "PACKAGE",
+      "seqn": 9,
+      "code": "BRANDED CAMPAIGN 2",
+      "moreInfo": ""
+    }
+  ]
+}
